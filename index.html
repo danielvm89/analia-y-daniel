@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analía & Daniel - 16 de Agosto 2026</title>
+    <title>Analía & Daniel - 15 y 16 de Agosto 2026</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&family=Italiana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Cormorant+Infant:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,16 +15,15 @@
     <nav class="main-nav" id="mainNav">
         <div class="nav-inner">
             <a href="#inicio" class="nav-logo">
-                <svg class="nav-heliconia" viewBox="0 0 40 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Heliconia estilizada -->
-                    <path d="M20,48 C20,48 18,30 18,25" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>
-                    <path d="M18,25 Q14,22 10,18 Q14,17 18,20" fill="currentColor" class="heliconia-petal-1"/>
-                    <path d="M18,20 Q22,16 26,13 Q23,17 20,20" fill="currentColor" class="heliconia-petal-2"/>
-                    <path d="M20,18 Q15,14 12,9 Q16,10 20,14" fill="currentColor" class="heliconia-petal-3"/>
-                    <path d="M20,14 Q24,9 28,5 Q25,10 22,15" fill="currentColor" class="heliconia-petal-4"/>
-                    <path d="M22,12 Q17,7 15,2 Q19,5 22,9" fill="currentColor" class="heliconia-petal-5"/>
+                <svg class="nav-heliconia" viewBox="0 0 40 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20,48 L18,25 L18,20 L20,18 L20,14 L22,12 L22,3" stroke="#2F5A1A" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.75"/>
+                    <path d="M18,25 Q14,22 10,18 Q14,17 18,20" fill="#C0392B" opacity="0.9"/>
+                    <path d="M18,20 Q22,16 26,13 Q23,17 20,20" fill="#D4764E" opacity="0.95"/>
+                    <path d="M20,18 Q15,14 12,9 Q16,10 20,14" fill="#C0392B" opacity="0.85"/>
+                    <path d="M20,14 Q24,9 28,5 Q25,10 22,15" fill="#D4764E" opacity="0.9"/>
+                    <path d="M22,12 Q17,7 15,2 Q19,5 22,9" fill="#C0392B" opacity="0.8"/>
                 </svg>
-                <span>A & D</span>
+                <span>A<span class="logo-amp">&</span>D</span>
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Menú">
                 <span></span><span></span><span></span>
@@ -35,6 +35,7 @@
                 <li><a href="#prewedding">Pre-Wedding</a></li>
                 <li><a href="#evento" data-i18n="nav.evento">Evento</a></li>
                 <li><a href="#dresscode">Dresscode</a></li>
+                <li><a href="#recomendaciones" data-i18n="nav.recomendaciones">Tips</a></li>
                 <li><a href="#regalos" data-i18n="nav.regalos">Regalos</a></li>
                 <li><a href="#rsvp">RSVP</a></li>
                 <li><button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button></li>
@@ -50,10 +51,10 @@
             <h1 class="hero-names">Analía <span class="ampersand">&</span> Daniel</h1>
             <div class="hero-date">
                 <div class="date-line"></div>
-                <p data-i18n="hero.date">16 de Agosto de 2026</p>
+                <p data-i18n="hero.date">15 y 16 de Agosto de 2026</p>
                 <div class="date-line"></div>
             </div>
-            <p class="hero-location">Hacienda San Jorge &bull; Pereira, Colombia</p>
+            <p class="hero-location">Pereira, Colombia</p>
             <a href="#rsvp" class="hero-btn" data-i18n="hero.btn">Confirmar Asistencia</a>
         </div>
         <div class="hero-scroll">
@@ -64,13 +65,13 @@
 
     <!-- Separador Floral SVG -->
     <div class="floral-divider">
-        <svg class="divider-heliconia" viewBox="0 0 40 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20,48 C20,48 18,30 18,25" stroke="#1B3A0B" stroke-width="1.5" opacity="0.5"/>
-            <path d="M18,25 Q14,22 10,18 Q14,17 18,20" fill="#D4764E" opacity="0.9"/>
-            <path d="M18,20 Q22,16 26,13 Q23,17 20,20" fill="#E67E22" opacity="0.95"/>
-            <path d="M20,18 Q15,14 12,9 Q16,10 20,14" fill="#D4764E" opacity="0.85"/>
-            <path d="M20,14 Q24,9 28,5 Q25,10 22,15" fill="#E67E22" opacity="0.9"/>
-            <path d="M22,12 Q17,7 15,2 Q19,5 22,9" fill="#D4764E" opacity="0.8"/>
+        <svg class="divider-heliconia divider-heliconia-lg" viewBox="0 0 40 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20,48 L18,25 L18,20 L20,18 L20,14 L22,12 L22,3" stroke="#2F5A1A" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.75"/>
+            <path d="M18,25 Q14,22 10,18 Q14,17 18,20" fill="#C0392B" opacity="0.9"/>
+            <path d="M18,20 Q22,16 26,13 Q23,17 20,20" fill="#D4764E" opacity="0.95"/>
+            <path d="M20,18 Q15,14 12,9 Q16,10 20,14" fill="#C0392B" opacity="0.85"/>
+            <path d="M20,14 Q24,9 28,5 Q25,10 22,15" fill="#D4764E" opacity="0.9"/>
+            <path d="M22,12 Q17,7 15,2 Q19,5 22,9" fill="#C0392B" opacity="0.8"/>
         </svg>
     </div>
 
@@ -127,10 +128,11 @@
                     </div>
                 </div>
 
-                <!-- Fila 2: 2018 -->
+                <!-- Fila 2: 2018 (verticales pareadas) -->
                 <div class="historia-row">
-                    <div class="historia-card">
+                    <div class="historia-card historia-card-dual">
                         <img src="img/historia-03-2018-bogota.jpg" alt="2018" loading="lazy">
+                        <img src="img/historia-03b-2018-madrid2.jpg" alt="2018" loading="lazy">
                     </div>
                     <div class="historia-year"><span>2018</span></div>
                     <div class="historia-card">
@@ -160,58 +162,64 @@
                     </div>
                 </div>
 
-                <!-- Fila 5: 2020 -->
+                <!-- Fila 5: 2021 -->
                 <div class="historia-row">
                     <div class="historia-card">
-                        <img src="img/historia-09-2020-uk.jpg" alt="2020" loading="lazy">
+                        <img src="img/historia-09-2020-uk.jpg" alt="2021" loading="lazy">
                     </div>
-                    <div class="historia-year"><span>2020</span></div>
+                    <div class="historia-year"><span>2021</span></div>
                     <div class="historia-card">
-                        <img src="img/historia-10-2020-uk2.jpg" alt="2020" loading="lazy">
+                        <img src="img/historia-10-2020-uk2.jpg" alt="2021" loading="lazy">
                     </div>
                 </div>
 
-                <!-- Fila 6: 2022-2023 -->
+                <!-- Fila 6: 2022-2023 (verticales pareadas) -->
                 <div class="historia-row">
-                    <div class="historia-card">
+                    <div class="historia-card historia-card-dual">
                         <img src="img/historia-11-2022-balcanes.jpg" alt="2022" loading="lazy">
+                        <img src="img/historia-12-2023-balcanes2.jpg" alt="2023" loading="lazy">
                     </div>
                     <div class="historia-year"><span>2022</span></div>
                     <div class="historia-card">
-                        <img src="img/historia-12-2023-balcanes2.jpg" alt="2023" loading="lazy">
+                        <img src="img/historia-13-2023-bogota.jpg" alt="2023" loading="lazy">
                     </div>
                 </div>
 
-                <!-- Fila 7: 2023 -->
+                <!-- Fila 7: 2023 (verticales pareadas) -->
                 <div class="historia-row">
-                    <div class="historia-card">
-                        <img src="img/historia-13-2023-bogota.jpg" alt="2023" loading="lazy">
+                    <div class="historia-card historia-card-dual">
+                        <img src="img/historia-14-2023-fiesta.jpg" alt="2023" loading="lazy">
+                        <img src="img/historia-14b-2023-campo.jpg" alt="2023" loading="lazy">
                     </div>
                     <div class="historia-year"><span>2023</span></div>
                     <div class="historia-card">
-                        <img src="img/historia-14-2023-fiesta.jpg" alt="2023" loading="lazy">
+                        <img src="img/historia-15-2024-pereira.jpg" alt="2024" loading="lazy">
                     </div>
                 </div>
 
-                <!-- Fila 8: 2024-2025 -->
-                <div class="historia-row">
-                    <div class="historia-card">
-                        <img src="img/historia-15-2024-pereira.jpg" alt="2024" loading="lazy">
-                    </div>
-                    <div class="historia-year"><span>2024</span></div>
+                <!-- Fila 8: 2025 -->
+                <div class="historia-row historia-row-propuesta">
                     <div class="historia-card">
                         <img src="img/historia-16-2025-spa.jpg" alt="2025" loading="lazy">
                     </div>
-                </div>
-
-                <!-- Fila 9: La Propuesta 2025 💍 + 2026 -->
-                <div class="historia-row historia-row-propuesta">
+                    <div class="historia-year propuesta-year"><span>2025 💍</span></div>
                     <div class="historia-card historia-card-propuesta">
                         <img src="img/historia-17-2025-propuesta.jpg" alt="La propuesta 2025" loading="lazy">
                     </div>
-                    <div class="historia-year propuesta-year"><span>2025 💍</span></div>
-                    <div class="historia-card">
+                </div>
+
+                <!-- Fila 9: 2026 (verticales pareadas) -->
+                <div class="historia-row">
+                    <div class="historia-card historia-card-dual">
                         <img src="img/historia-18-2026-pereira.jpg" alt="2026" loading="lazy">
+                        <img src="img/historia-18b-2026-lago.jpg" alt="2026" loading="lazy">
+                    </div>
+                    <div class="historia-year"><span>2026 🎉</span></div>
+                    <div class="historia-card historia-card-loading">
+                        <div class="loading-content">
+                            <span class="loading-emojis">👰‍♀️🤵</span>
+                            <span class="loading-soon">Coming soon... 🔜🥳</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -220,13 +228,13 @@
 
     <!-- Separador Floral SVG 2 -->
     <div class="floral-divider">
-        <svg class="divider-heliconia" viewBox="0 0 40 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20,48 C20,48 18,30 18,25" stroke="#1B3A0B" stroke-width="1.5" opacity="0.5"/>
-            <path d="M18,25 Q14,22 10,18 Q14,17 18,20" fill="#D4764E" opacity="0.9"/>
-            <path d="M18,20 Q22,16 26,13 Q23,17 20,20" fill="#E67E22" opacity="0.95"/>
-            <path d="M20,18 Q15,14 12,9 Q16,10 20,14" fill="#D4764E" opacity="0.85"/>
-            <path d="M20,14 Q24,9 28,5 Q25,10 22,15" fill="#E67E22" opacity="0.9"/>
-            <path d="M22,12 Q17,7 15,2 Q19,5 22,9" fill="#D4764E" opacity="0.8"/>
+        <svg class="divider-heliconia" viewBox="0 0 40 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20,48 L18,25 L18,20 L20,18 L20,14 L22,12 L22,3" stroke="#2F5A1A" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.75"/>
+            <path d="M18,25 Q14,22 10,18 Q14,17 18,20" fill="#C0392B" opacity="0.9"/>
+            <path d="M18,20 Q22,16 26,13 Q23,17 20,20" fill="#D4764E" opacity="0.95"/>
+            <path d="M20,18 Q15,14 12,9 Q16,10 20,14" fill="#C0392B" opacity="0.85"/>
+            <path d="M20,14 Q24,9 28,5 Q25,10 22,15" fill="#D4764E" opacity="0.9"/>
+            <path d="M22,12 Q17,7 15,2 Q19,5 22,9" fill="#C0392B" opacity="0.8"/>
         </svg>
     </div>
 
@@ -257,8 +265,10 @@
                             <circle cx="12" cy="10" r="3"/>
                         </svg>
                         <div>
-                            <strong>Casa Toscana</strong>
-                            <span>Pereira, Colombia</span>
+                            <a href="https://maps.app.goo.gl/PAeNA2NoSRSrZU416" target="_blank" rel="noopener" class="prewedding-location-link">
+                                <strong>Casa Toscana</strong>
+                                <span>Pereira, Colombia ↗</span>
+                            </a>
                         </div>
                     </div>
                     <div class="prewedding-detail">
@@ -271,9 +281,19 @@
                             <span data-i18n="prewedding.transport_desc">Habrá bus para recogerlos</span>
                         </div>
                     </div>
+                    <div class="prewedding-detail prewedding-detail-warning">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/>
+                        </svg>
+                        <div>
+                            <strong data-i18n="prewedding.no_parking">No hay parqueadero</strong>
+                            <span data-i18n="prewedding.no_parking_desc">No habrá disponibilidad de parqueo en el lugar</span>
+                        </div>
+                    </div>
                 </div>
                 <p class="prewedding-description" data-i18n="prewedding.description">
-                    Queremos comenzar la celebración con ustedes un día antes 🎉 Los invitamos a una pool party en Casa Toscana donde podremos empezar a festejar juntos y broncearnos para el Matri el día después. ¡No olviden traer su traje de baño! 👙🩳
+                    Queremos comenzar la celebración con ustedes un día antes 🎉 Los invitamos a una pool party en Casa Toscana donde podremos empezar a festejar juntos y broncearnos para el Matri el día después. ¡No olviden traer su vestido de baño! 👙🩳
                 </p>
                 <a href="https://pin.it/6IHVqtmLP" class="prewedding-pinterest" target="_blank" rel="noopener">
                     <svg viewBox="0 0 24 24" fill="#E60023" width="20" height="20">
@@ -285,15 +305,15 @@
         </div>
     </section>
 
-    <!-- Separador Floral SVG 2 -->
+    <!-- Separador Floral SVG 3 -->
     <div class="floral-divider">
-        <svg class="divider-heliconia" viewBox="0 0 40 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20,48 C20,48 18,30 18,25" stroke="#1B3A0B" stroke-width="1.5" opacity="0.5"/>
-            <path d="M18,25 Q14,22 10,18 Q14,17 18,20" fill="#D4764E" opacity="0.9"/>
-            <path d="M18,20 Q22,16 26,13 Q23,17 20,20" fill="#E67E22" opacity="0.95"/>
-            <path d="M20,18 Q15,14 12,9 Q16,10 20,14" fill="#D4764E" opacity="0.85"/>
-            <path d="M20,14 Q24,9 28,5 Q25,10 22,15" fill="#E67E22" opacity="0.9"/>
-            <path d="M22,12 Q17,7 15,2 Q19,5 22,9" fill="#D4764E" opacity="0.8"/>
+        <svg class="divider-heliconia" viewBox="0 0 40 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20,48 L18,25 L18,20 L20,18 L20,14 L22,12 L22,3" stroke="#2F5A1A" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.75"/>
+            <path d="M18,25 Q14,22 10,18 Q14,17 18,20" fill="#C0392B" opacity="0.9"/>
+            <path d="M18,20 Q22,16 26,13 Q23,17 20,20" fill="#D4764E" opacity="0.95"/>
+            <path d="M20,18 Q15,14 12,9 Q16,10 20,14" fill="#C0392B" opacity="0.85"/>
+            <path d="M20,14 Q24,9 28,5 Q25,10 22,15" fill="#D4764E" opacity="0.9"/>
+            <path d="M22,12 Q17,7 15,2 Q19,5 22,9" fill="#C0392B" opacity="0.8"/>
         </svg>
     </div>
 
@@ -301,7 +321,7 @@
     <section class="event-section" id="evento">
         <div class="container">
             <h2 class="section-title" data-i18n="evento.title">Matrimonio</h2>
-            <p class="section-subtitle" data-i18n="evento.subtitle">Los esperamos en un lugar mágico rodeado de naturaleza</p>
+            <p class="section-subtitle" data-i18n="evento.subtitle">Los esperamos en un lugar mágico rodeado de naturaleza. En Colombia, el lunes de ese fin de semana es festivo</p>
 
             <div class="event-cards">
                 <div class="event-card">
@@ -324,7 +344,7 @@
                         </svg>
                     </div>
                     <h3 data-i18n="evento.fecha">16 de Agosto</h3>
-                    <p data-i18n-html="evento.fecha_detail">2026<br>Domingo</p>
+                    <p data-i18n-html="evento.fecha_detail">2026<br><strong class="evento-dia">Domingo</strong></p>
                 </div>
                 <div class="event-card">
                     <div class="event-card-icon">
@@ -333,8 +353,8 @@
                             <polyline points="12,6 12,12 16,14"/>
                         </svg>
                     </div>
-                    <h3>3:00 PM</h3>
-                    <p data-i18n-html="evento.hora_detail">Ceremonia<br>Hora Colombia</p>
+                    <h3>3:00 PM – 4:00 AM</h3>
+                    <p data-i18n="evento.hora_detail">Hora Colombia</p>
                 </div>
             </div>
 
@@ -343,7 +363,7 @@
                 <h3 class="map-title" data-i18n="evento.map_title">Cómo llegar</h3>
                 <div class="map-wrapper">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.5!2d-75.82!3d4.84!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sCerritos+Pereira+Farmatodo!5e0!3m2!1ses!2sco!4v1234567890"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1585.0!2d-75.8150206!3d4.8085996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e387bb05aaaa74f%3A0x9aed9acaad62a1f5!2sHacienda%20San%20Jorge%20Cerritos!5e0!3m2!1ses!2sco!4v1708000000000"
                         width="100%"
                         height="400"
                         style="border:0; border-radius: 12px;"
@@ -352,8 +372,8 @@
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
-                <p class="map-note" data-i18n="evento.map_note">Al lado del Farmatodo de Cerritos, entre el Saint Andrews y el Farmatodo</p>
-                <a href="https://maps.google.com/?q=Farmatodo+Cerritos+Pereira+Colombia" target="_blank" rel="noopener" class="map-link" data-i18n="evento.map_link">
+                <p class="map-note" data-i18n="evento.map_note">Hacienda San Jorge, Cerritos, Pereira</p>
+                <a href="https://maps.app.goo.gl/EfNSLB1ZDk33kEoe9" target="_blank" rel="noopener" class="map-link" data-i18n="evento.map_link">
                     Abrir en Google Maps
                 </a>
             </div>
@@ -364,7 +384,7 @@
     <section class="dresscode-section" id="dresscode">
         <div class="container">
             <h2 class="section-title">Dresscode</h2>
-            <p class="section-subtitle" data-i18n="dresscode.subtitle">Queremos que se sientan cómodos y elegantes</p>
+            <p class="section-subtitle" data-i18n="dresscode.subtitle">El evento es campestre, prioriza tu comodidad</p>
 
             <div class="dresscode-cards">
                 <div class="dresscode-card">
@@ -392,8 +412,7 @@
                         </svg>
                     </div>
                     <h3 data-i18n="dresscode.men">Hombres</h3>
-                    <p class="dresscode-style">Tropical Elegante</p>
-                    <p class="dresscode-note" data-i18n-html="dresscode.men_note"><strong>Camisa de lino</strong><br>con pantalón beige</p>
+                    <p class="dresscode-note" data-i18n-html="dresscode.men_note"><strong>Camisa de lino</strong><br>con pantalón beige<br>Se reserva el color <strong>azul</strong></p>
                 </div>
             </div>
 
@@ -420,7 +439,7 @@
                         </div>
                         <div>
                             <strong>Board Hombres</strong>
-                            <span>Tropical Elegante</span>
+                            <span>Lino & Beige</span>
                         </div>
                     </a>
                 </div>
@@ -440,11 +459,96 @@
         </div>
     </div>
 
+    <!-- Recomendaciones -->
+    <section class="recomendaciones-section" id="recomendaciones">
+        <div class="container">
+            <h2 class="section-title" data-i18n="recomendaciones.title">Recomendaciones</h2>
+            <p class="section-subtitle" data-i18n="recomendaciones.subtitle">Todo lo que necesitan saber para disfrutar al máximo su estadía en Pereira</p>
+
+            <div class="recomendaciones-cards">
+
+                <!-- Alojamiento -->
+                <div class="recomendaciones-card tip-color-alojamiento" onclick="openTipsModal('alojamiento')">
+                    <div class="recomendaciones-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9 22 9 12 15 12 15 22"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="recomendaciones.alojamiento">Alojamiento</h3>
+                    <p class="recomendaciones-desc" data-i18n="recomendaciones.alojamiento_desc">Hoteles y fincas cercanas al lugar del evento</p>
+                    <span class="recomendaciones-btn" data-i18n="recomendaciones.ver_mas">Ver detalles</span>
+                </div>
+
+                <!-- Planes en la Zona -->
+                <div class="recomendaciones-card tip-color-planes" onclick="openTipsModal('planes')">
+                    <div class="recomendaciones-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/>
+                            <line x1="9" y1="3" x2="9" y2="18"/>
+                            <line x1="15" y1="6" x2="15" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="recomendaciones.planes">Planes en la Zona</h3>
+                    <p class="recomendaciones-desc" data-i18n="recomendaciones.planes_desc">Actividades y lugares para conocer en el Eje Cafetero</p>
+                    <span class="recomendaciones-btn" data-i18n="recomendaciones.ver_mas">Ver detalles</span>
+                </div>
+
+                <!-- Peluquería & Belleza -->
+                <div class="recomendaciones-card tip-color-peluqueria" onclick="openTipsModal('peluqueria')">
+                    <div class="recomendaciones-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="6" cy="6" r="3"/>
+                            <path d="M8.12 8.12L12 12"/>
+                            <path d="M20 4L8.12 15.88"/>
+                            <circle cx="6" cy="18" r="3"/>
+                            <path d="M14.8 14.8L20 20"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="recomendaciones.peluqueria">Peluquería & Belleza</h3>
+                    <p class="recomendaciones-desc" data-i18n="recomendaciones.peluqueria_desc">Salones de belleza recomendados en Pereira</p>
+                    <span class="recomendaciones-btn" data-i18n="recomendaciones.ver_mas">Ver detalles</span>
+                </div>
+
+                <!-- Transporte -->
+                <div class="recomendaciones-card tip-color-transporte" onclick="openTipsModal('transporte')">
+                    <div class="recomendaciones-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="1" y="3" width="15" height="13" rx="2"/>
+                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                            <circle cx="5.5" cy="18.5" r="2.5"/>
+                            <circle cx="18.5" cy="18.5" r="2.5"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="recomendaciones.transporte">Transporte</h3>
+                    <p class="recomendaciones-desc" data-i18n="recomendaciones.transporte_desc">Cómo llegar a Pereira y moverse en la zona</p>
+                    <span class="recomendaciones-btn" data-i18n="recomendaciones.ver_mas">Ver detalles</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Modal -->
+    <div class="tips-modal-overlay" id="tipsModal">
+        <div class="tips-modal">
+            <button class="tips-modal-close" id="tipsModalClose">&times;</button>
+            <div class="tips-modal-header">
+                <div class="tips-modal-icon" id="tipsModalIcon"></div>
+                <h3 class="tips-modal-title" id="tipsModalTitle"></h3>
+                <p class="tips-modal-desc" id="tipsModalDesc"></p>
+            </div>
+            <div class="tips-modal-body" id="tipsModalBody">
+                <!-- Items se generan dinámicamente -->
+            </div>
+        </div>
+    </div>
+
     <!-- Mesa de Regalos -->
     <section class="gifts-section" id="regalos">
         <div class="container">
             <h2 class="section-title" data-i18n="gifts.title">Mesa de Regalos</h2>
-            <p class="section-subtitle" data-i18n="gifts.subtitle">Su presencia es nuestro mejor regalo. Sin embargo, si desean tener un detalle con nosotros, aquí les dejamos algunas opciones.</p>
+            <p class="section-subtitle" data-i18n="gifts.subtitle">Su presencia es nuestro mejor regalo, de verdad valoramos el esfuerzo que están haciendo para acompañarnos. Sin embargo, si desean tener un detalle con nosotros, aquí les dejamos algunas opciones.</p>
 
             <div class="gift-options gift-options-3">
                 <div class="gift-card">
@@ -610,10 +714,83 @@
             </div>
 
             <div class="modal-body">
-                <!-- Mini formulario de regalo -->
+                <!-- Datos bancarios -->
                 <div class="gift-form-divider">
                     <span class="gift-form-divider-line"></span>
-                    <span class="gift-form-divider-text" data-i18n="gifts.form_contribute">Contribuye aquí</span>
+                    <span class="gift-form-divider-text" data-i18n="gifts.form_or">Transfiere directamente</span>
+                    <span class="gift-form-divider-line"></span>
+                </div>
+
+                <!-- Accordion de datos bancarios (se mueve aquí arriba) -->
+
+                <div class="bank-accordion">
+                    <button class="bank-accordion-toggle" id="bankToggle" type="button">
+                        <span data-i18n="gifts.show_bank">Ver datos bancarios</span>
+                        <svg class="bank-accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="bank-accordion-body" id="bankBody">
+                        <div class="bank-option">
+                            <div class="bank-option-header">
+                                <span class="bank-option-icon">🏦</span>
+                                <div>
+                                    <strong data-i18n="gifts.bank_transfer">Transferencia Bancaria</strong>
+                                    <span class="bank-name">Nu</span>
+                                </div>
+                            </div>
+                            <div class="bank-details">
+                                <div class="bank-detail-row">
+                                    <span class="bank-label" data-i18n="gifts.bank_key">Llave:</span>
+                                    <span class="bank-value bank-copyable" data-copy="@DVA467">@DVA467</span>
+                                </div>
+                                <div class="bank-detail-row">
+                                    <span class="bank-label" data-i18n="gifts.account_holder">Titular:</span>
+                                    <span class="bank-value">Daniel Vallejo</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bank-option">
+                            <div class="bank-option-header">
+                                <span class="bank-option-icon">🌍</span>
+                                <div>
+                                    <strong data-i18n="gifts.intl_transfer">Transferencia Internacional</strong>
+                                    <span class="bank-name">Wise</span>
+                                </div>
+                            </div>
+                            <div class="bank-details">
+                                <div class="bank-detail-row">
+                                    <span class="bank-label" data-i18n="gifts.account_holder">Titular:</span>
+                                    <span class="bank-value">Analia Saker</span>
+                                </div>
+                                <div class="bank-detail-row">
+                                    <span class="bank-label">Sort code:</span>
+                                    <span class="bank-value bank-copyable" data-copy="23-08-01">23-08-01</span>
+                                </div>
+                                <div class="bank-detail-row">
+                                    <span class="bank-label" data-i18n="gifts.account_number">No. de cuenta:</span>
+                                    <span class="bank-value bank-copyable" data-copy="57209464">57209464</span>
+                                </div>
+                                <div class="bank-detail-row">
+                                    <span class="bank-label">IBAN:</span>
+                                    <span class="bank-value bank-copyable" data-copy="GB67TRWI23080157209464">GB67 TRWI 2308 0157 2094 64</span>
+                                </div>
+                                <div class="bank-detail-row">
+                                    <span class="bank-label" data-i18n="gifts.wise_address">Dirección Wise:</span>
+                                    <span class="bank-value bank-value-small">56 Shoreditch High Street, London E1 6JJ, United Kingdom</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="modal-note" data-i18n="gifts.modal_note">Al realizar tu aporte, por favor incluye tu nombre en la descripción para que podamos agradecerte personalmente.</p>
+                    </div>
+                </div>
+
+                <!-- Registrar contribución -->
+                <div class="gift-form-divider">
+                    <span class="gift-form-divider-line"></span>
+                    <span class="gift-form-divider-text" data-i18n="gifts.form_contribute">Registrar contribución</span>
                     <span class="gift-form-divider-line"></span>
                 </div>
 
@@ -634,7 +811,7 @@
                     </div>
                     <input type="hidden" name="gift_tipo" id="giftTipo" value="">
                     <button type="submit" class="gift-form-submit">
-                        <span data-i18n="gifts.form_send">Enviar</span>
+                        <span data-i18n="gifts.form_send">Registrar contribución</span>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
                             <polyline points="20 6 9 17 4 12"/>
                         </svg>
@@ -644,89 +821,6 @@
                 <div class="gift-form-success" id="giftFormSuccess" style="display:none;">
                     <span>✓</span>
                     <p data-i18n="gifts.form_thanks">¡Gracias por tu generosidad! Los novios recibirán tu mensaje.</p>
-                </div>
-
-                <!-- Datos bancarios colapsables -->
-                <div class="gift-form-divider">
-                    <span class="gift-form-divider-line"></span>
-                    <span class="gift-form-divider-text" data-i18n="gifts.form_or">o transfiere directamente</span>
-                    <span class="gift-form-divider-line"></span>
-                </div>
-
-                <div class="bank-accordion">
-                    <button class="bank-accordion-toggle" id="bankToggle" type="button">
-                        <span data-i18n="gifts.show_bank">Ver datos bancarios</span>
-                        <svg class="bank-accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
-                            <polyline points="6 9 12 15 18 9"/>
-                        </svg>
-                    </button>
-                    <div class="bank-accordion-body" id="bankBody">
-                        <div class="bank-option">
-                            <div class="bank-option-header">
-                                <span class="bank-option-icon">🏦</span>
-                                <div>
-                                    <strong data-i18n="gifts.bank_transfer">Transferencia Bancaria</strong>
-                                    <span class="bank-name">Bancolombia</span>
-                                </div>
-                            </div>
-                            <div class="bank-details">
-                                <div class="bank-detail-row">
-                                    <span class="bank-label" data-i18n="gifts.account_type">Tipo de cuenta:</span>
-                                    <span class="bank-value" data-i18n="gifts.savings">Ahorros</span>
-                                </div>
-                                <div class="bank-detail-row">
-                                    <span class="bank-label" data-i18n="gifts.account_number">No. de cuenta:</span>
-                                    <span class="bank-value bank-copyable" data-copy="XXXXXXXXXX">XXXXXXXXXX</span>
-                                </div>
-                                <div class="bank-detail-row">
-                                    <span class="bank-label" data-i18n="gifts.account_holder">Titular:</span>
-                                    <span class="bank-value">Daniel / Analía</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="bank-option">
-                            <div class="bank-option-header">
-                                <span class="bank-option-icon">📱</span>
-                                <div>
-                                    <strong>Nequi</strong>
-                                    <span class="bank-name" data-i18n="gifts.nequi_desc">Envío rápido desde tu celular</span>
-                                </div>
-                            </div>
-                            <div class="bank-details">
-                                <div class="bank-detail-row">
-                                    <span class="bank-label" data-i18n="gifts.phone_number">Número:</span>
-                                    <span class="bank-value bank-copyable" data-copy="3XXXXXXXXX">3XXXXXXXXX</span>
-                                </div>
-                                <div class="bank-detail-row">
-                                    <span class="bank-label" data-i18n="gifts.account_holder">Titular:</span>
-                                    <span class="bank-value">Daniel / Analía</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="bank-option">
-                            <div class="bank-option-header">
-                                <span class="bank-option-icon">💜</span>
-                                <div>
-                                    <strong>Daviplata</strong>
-                                    <span class="bank-name" data-i18n="gifts.daviplata_desc">Transferencia fácil</span>
-                                </div>
-                            </div>
-                            <div class="bank-details">
-                                <div class="bank-detail-row">
-                                    <span class="bank-label" data-i18n="gifts.phone_number">Número:</span>
-                                    <span class="bank-value bank-copyable" data-copy="3XXXXXXXXX">3XXXXXXXXX</span>
-                                </div>
-                                <div class="bank-detail-row">
-                                    <span class="bank-label" data-i18n="gifts.account_holder">Titular:</span>
-                                    <span class="bank-value">Daniel / Analía</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="modal-note" data-i18n="gifts.modal_note">Al realizar tu aporte, por favor incluye tu nombre en la descripción para que podamos agradecerte personalmente.</p>
-                    </div>
                 </div>
             </div>
         </div>

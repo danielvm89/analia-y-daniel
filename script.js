@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'nav.evento': 'Evento',
             'nav.regalos': 'Regalos',
             'hero.subtitle': 'Nos casamos',
-            'hero.date': '16 de Agosto de 2026',
+            'hero.date': '15 y 16 de Agosto de 2026',
             'hero.btn': 'Confirmar Asistencia',
             'hero.scroll': 'Descubre más',
             'countdown.title': 'Faltan',
@@ -216,24 +216,38 @@ document.addEventListener('DOMContentLoaded', () => {
             'prewedding.date': 'Sábado 15 de Agosto, 2026',
             'prewedding.transport': 'Transporte incluido',
             'prewedding.transport_desc': 'Habrá bus para recogerlos',
-            'prewedding.description': 'Queremos comenzar la celebración con ustedes un día antes 🎉 Los invitamos a una pool party en Casa Toscana donde podremos empezar a festejar juntos y broncearnos para el Matri el día después. ¡No olviden traer su traje de baño! 👙🩳',
+            'prewedding.no_parking': 'No hay parqueadero',
+            'prewedding.no_parking_desc': 'No habrá disponibilidad de parqueo en el lugar',
+            'prewedding.description': 'Queremos comenzar la celebración con ustedes un día antes 🎉 Los invitamos a una pool party en Casa Toscana donde podremos empezar a festejar juntos y broncearnos para el Matri el día después. ¡No olviden traer su vestido de baño! 👙🩳',
             'prewedding.pinterest': 'Inspiración para el Pool Party',
             'evento.title': 'Matrimonio',
-            'evento.subtitle': 'Los esperamos en un lugar mágico rodeado de naturaleza',
+            'evento.subtitle': 'Los esperamos en un lugar mágico rodeado de naturaleza. En Colombia, el lunes de ese fin de semana es festivo',
             'evento.fecha': '16 de Agosto',
-            'evento.fecha_detail': '2026<br>Domingo',
-            'evento.hora_detail': 'Ceremonia<br>Hora Colombia',
+            'evento.fecha_detail': '2026<br><strong class="evento-dia">Domingo</strong>',
+            'evento.hora_detail': 'Hora Colombia',
             'evento.map_title': 'Cómo llegar',
-            'evento.map_note': 'Al lado del Farmatodo de Cerritos, entre el Saint Andrews y el Farmatodo',
+            'evento.map_note': 'Hacienda San Jorge, Cerritos, Pereira',
             'evento.map_link': 'Abrir en Google Maps',
-            'dresscode.subtitle': 'Queremos que se sientan cómodos y elegantes',
+            'dresscode.subtitle': 'El evento es campestre, prioriza tu comodidad',
             'dresscode.women': 'Mujeres',
             'dresscode.women_note': 'Vestido largo, sin tacones puntilla<br>Por favor reservar los colores<br><strong>hueso, blanco y beige</strong><br>para la novia',
             'dresscode.men': 'Hombres',
-            'dresscode.men_note': '<strong>Camisa de lino</strong><br>con pantalón beige',
+            'dresscode.men_note': '<strong>Camisa de lino</strong><br>con pantalón beige<br>Se reserva el color <strong>azul</strong>',
             'dresscode.pinterest_title': 'Inspiración en Pinterest',
+            'nav.recomendaciones': 'Tips',
+            'recomendaciones.title': 'Recomendaciones',
+            'recomendaciones.subtitle': 'Todo lo que necesitan saber para disfrutar al máximo su estadía en Pereira',
+            'recomendaciones.alojamiento': 'Alojamiento',
+            'recomendaciones.alojamiento_desc': 'Quédate en Cerritos, estarás cerca a los dos eventos',
+            'recomendaciones.planes': 'Planes en la Zona',
+            'recomendaciones.planes_desc': 'Actividades y lugares para conocer en el Eje Cafetero',
+            'recomendaciones.peluqueria': 'Peluquería & Belleza',
+            'recomendaciones.peluqueria_desc': 'Salones de belleza recomendados en Pereira',
+            'recomendaciones.transporte': 'Transporte',
+            'recomendaciones.transporte_desc': '🚫🍺 No manejar tomados — Gestiona tu transporte con tiempo',
+            'recomendaciones.ver_mas': 'Ver detalles',
             'gifts.title': 'Mesa de Regalos',
-            'gifts.subtitle': 'Su presencia es nuestro mejor regalo. Sin embargo, si desean tener un detalle con nosotros, aquí les dejamos algunas opciones.',
+            'gifts.subtitle': 'Su presencia es nuestro mejor regalo, de verdad valoramos el esfuerzo que están haciendo para acompañarnos. Sin embargo, si desean tener un detalle con nosotros, aquí les dejamos algunas opciones.',
             'gifts.honeymoon': 'Luna de Miel',
             'gifts.honeymoon_desc': 'Ayúdanos a hacer realidad nuestro viaje soñado juntos a Italia.',
             'gifts.see_more': 'Ver más',
@@ -244,16 +258,14 @@ document.addEventListener('DOMContentLoaded', () => {
             'gifts.envelope_desc': 'Si prefieres, puedes traer un sobre el día del evento. Todo aporte será recibido con mucho cariño.',
             'gifts.modal_instructions': 'Puedes hacer tu aporte a través de cualquiera de estos medios:',
             'gifts.bank_transfer': 'Transferencia Bancaria',
-            'gifts.account_type': 'Tipo de cuenta:',
-            'gifts.savings': 'Ahorros',
+            'gifts.bank_key': 'Llave:',
             'gifts.account_number': 'No. de cuenta:',
             'gifts.account_holder': 'Titular:',
-            'gifts.nequi_desc': 'Envío rápido desde tu celular',
-            'gifts.daviplata_desc': 'Transferencia fácil',
-            'gifts.phone_number': 'Número:',
+            'gifts.intl_transfer': 'Transferencia Internacional',
+            'gifts.wise_address': 'Dirección Wise:',
             'gifts.modal_note': 'Al realizar tu aporte, por favor incluye tu nombre en la descripción para que podamos agradecerte personalmente.',
-            'gifts.form_contribute': 'Contribuye aquí',
-            'gifts.form_or': 'o transfiere directamente',
+            'gifts.form_contribute': 'Registrar contribución',
+            'gifts.form_or': 'Transfiere directamente',
             'gifts.show_bank': 'Ver datos bancarios',
             'gifts.form_name': 'Tu nombre',
             'gifts.form_name_ph': 'Tu nombre',
@@ -261,7 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'gifts.form_amount_ph': '$500.000',
             'gifts.form_message': 'Mensaje (opcional)',
             'gifts.form_message_ph': 'Un mensaje para los novios...',
-            'gifts.form_send': 'Enviar',
+            'gifts.form_send': 'Registrar contribución',
             'gifts.form_thanks': '¡Gracias por tu generosidad! Los novios recibirán tu mensaje.',
             'rsvp.title': 'Confirmar Asistencia',
             'rsvp.subtitle': 'Por favor confirma tu asistencia antes del <strong>31 de mayo de 2026</strong>.<br>Cada persona debe llenar el formulario individualmente.',
@@ -293,7 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'nav.evento': 'Event',
             'nav.regalos': 'Gifts',
             'hero.subtitle': 'We\'re getting married',
-            'hero.date': 'August 16, 2026',
+            'hero.date': 'August 15 & 16, 2026',
             'hero.btn': 'RSVP',
             'hero.scroll': 'Discover more',
             'countdown.title': 'Counting down',
@@ -309,24 +321,38 @@ document.addEventListener('DOMContentLoaded', () => {
             'prewedding.date': 'Saturday, August 15, 2026',
             'prewedding.transport': 'Transportation included',
             'prewedding.transport_desc': 'A bus will pick you up',
+            'prewedding.no_parking': 'No parking available',
+            'prewedding.no_parking_desc': 'There will be no parking at the venue',
             'prewedding.description': 'We want to kick off the celebration with you a day early 🎉 Join us for a pool party at Casa Toscana where we can start the party and get our tan on before the big day. Don\'t forget your swimsuit! 👙🩳',
             'prewedding.pinterest': 'Pool Party Inspiration',
             'evento.title': 'Wedding',
-            'evento.subtitle': 'We\'re waiting for you at a magical place surrounded by nature',
+            'evento.subtitle': 'We\'re waiting for you at a magical place surrounded by nature. In Colombia, that weekend, Monday is a public holiday',
             'evento.fecha': 'August 16',
-            'evento.fecha_detail': '2026<br>Sunday',
-            'evento.hora_detail': 'Ceremony<br>Colombia Time',
+            'evento.fecha_detail': '2026<br><strong class="evento-dia">Sunday</strong>',
+            'evento.hora_detail': 'Colombia Time',
             'evento.map_title': 'How to get there',
-            'evento.map_note': 'Next to the Farmatodo in Cerritos, between Saint Andrews and Farmatodo',
+            'evento.map_note': 'Hacienda San Jorge, Cerritos, Pereira',
             'evento.map_link': 'Open in Google Maps',
-            'dresscode.subtitle': 'We want you to feel comfortable and elegant',
+            'dresscode.subtitle': 'The event is outdoors, prioritize your comfort',
             'dresscode.women': 'Women',
             'dresscode.women_note': 'Long dress, no stiletto heels<br>Please reserve the colors<br><strong>ivory, white and beige</strong><br>for the bride',
             'dresscode.men': 'Men',
-            'dresscode.men_note': '<strong>Linen shirt</strong><br>with beige pants',
+            'dresscode.men_note': '<strong>Linen shirt</strong><br>with beige pants<br>The color <strong>blue</strong> is reserved',
             'dresscode.pinterest_title': 'Pinterest Inspiration',
+            'nav.recomendaciones': 'Tips',
+            'recomendaciones.title': 'Recommendations',
+            'recomendaciones.subtitle': 'Everything you need to know to enjoy your stay in Pereira',
+            'recomendaciones.alojamiento': 'Accommodation',
+            'recomendaciones.alojamiento_desc': 'Stay in Cerritos, you\'ll be close to both events',
+            'recomendaciones.planes': 'Things to Do',
+            'recomendaciones.planes_desc': 'Activities and places to explore in the Coffee Region',
+            'recomendaciones.peluqueria': 'Hair & Beauty',
+            'recomendaciones.peluqueria_desc': 'Recommended beauty salons in Pereira',
+            'recomendaciones.transporte': 'Transportation',
+            'recomendaciones.transporte_desc': '🚫🍺 Don\'t drink and drive — Arrange transport ahead of time',
+            'recomendaciones.ver_mas': 'See details',
             'gifts.title': 'Gift Registry',
-            'gifts.subtitle': 'Your presence is our greatest gift. However, if you wish to have a gesture with us, here are some options.',
+            'gifts.subtitle': 'Your presence is our greatest gift, we truly appreciate the effort you are making to join us. However, if you wish to have a gesture with us, here are some options.',
             'gifts.honeymoon': 'Honeymoon',
             'gifts.honeymoon_desc': 'Help us make our dream trip to Italy come true.',
             'gifts.see_more': 'See more',
@@ -337,16 +363,14 @@ document.addEventListener('DOMContentLoaded', () => {
             'gifts.envelope_desc': 'If you prefer, you can bring an envelope on the day of the event. Every contribution will be received with love.',
             'gifts.modal_instructions': 'You can make your contribution through any of these methods:',
             'gifts.bank_transfer': 'Bank Transfer',
-            'gifts.account_type': 'Account type:',
-            'gifts.savings': 'Savings',
+            'gifts.bank_key': 'Key:',
             'gifts.account_number': 'Account number:',
             'gifts.account_holder': 'Account holder:',
-            'gifts.nequi_desc': 'Quick transfer from your phone',
-            'gifts.daviplata_desc': 'Easy transfer',
-            'gifts.phone_number': 'Number:',
+            'gifts.intl_transfer': 'International Transfer',
+            'gifts.wise_address': 'Wise address:',
             'gifts.modal_note': 'When making your contribution, please include your name in the description so we can thank you personally.',
-            'gifts.form_contribute': 'Contribute here',
-            'gifts.form_or': 'or transfer directly',
+            'gifts.form_contribute': 'Register contribution',
+            'gifts.form_or': 'Transfer directly',
             'gifts.show_bank': 'Show bank details',
             'gifts.form_name': 'Your name',
             'gifts.form_name_ph': 'Your name',
@@ -354,7 +378,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'gifts.form_amount_ph': '$500,000',
             'gifts.form_message': 'Message (optional)',
             'gifts.form_message_ph': 'A message for the couple...',
-            'gifts.form_send': 'Send',
+            'gifts.form_send': 'Register contribution',
             'gifts.form_thanks': 'Thank you for your generosity! The couple will receive your message.',
             'rsvp.title': 'RSVP',
             'rsvp.subtitle': 'Please confirm your attendance before <strong>May 31, 2026</strong>.<br>Each person must fill out the form individually.',
@@ -436,19 +460,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const galleryNext = document.getElementById('galleryNext');
 
     // Image galleries per gift type
-    // Replace these placeholder paths with your actual images in img/gifts/
     const giftImages = {
         honeymoon: [
-            { src: 'img/gifts/amalfi-1.jpg', alt_es: 'Costa Amalfitana, Italia', alt_en: 'Amalfi Coast, Italy' },
-            { src: 'img/gifts/amalfi-2.jpg', alt_es: 'Positano, Italia', alt_en: 'Positano, Italy' },
-            { src: 'img/gifts/amalfi-3.jpg', alt_es: 'Atrani, Italia', alt_en: 'Atrani, Italy' },
-            { src: 'img/gifts/f1-1.jpg', alt_es: 'Gran Premio de F1, Monza', alt_en: 'F1 Grand Prix, Monza' },
-            { src: 'img/gifts/f1-2.jpg', alt_es: 'Circuito de Fórmula 1', alt_en: 'Formula 1 Circuit' }
+            { src: 'img/gifts/f1.avif', alt_es: 'Fórmula 1, Monza', alt_en: 'Formula 1, Monza' },
+            { src: 'img/gifts/amalfitana.webp', alt_es: 'Costa Amalfitana, Italia', alt_en: 'Amalfi Coast, Italy' },
+            { src: 'img/gifts/toscana.jpg', alt_es: 'Toscana, Italia', alt_en: 'Tuscany, Italy' }
         ],
         home: [
-            { src: 'img/gifts/hogar-1.jpg', alt_es: 'Sala de estar', alt_en: 'Living room' },
-            { src: 'img/gifts/hogar-2.jpg', alt_es: 'Comedor', alt_en: 'Dining room' },
-            { src: 'img/gifts/hogar-3.jpg', alt_es: 'Muebles para el hogar', alt_en: 'Home furniture' }
+            { src: 'img/gifts/lavadora.webp', alt_es: 'Electrodomésticos', alt_en: 'Appliances' },
+            { src: 'img/gifts/mesa.jpg', alt_es: 'Muebles', alt_en: 'Furniture' }
         ]
     };
 
@@ -692,6 +712,155 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => el.classList.remove('copied'), 1500);
             });
         });
+    });
+
+    // ========== TIPS MODAL ==========
+    const tipsContent = {
+        alojamiento: {
+            icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>',
+            title_es: 'Alojamiento',
+            title_en: 'Accommodation',
+            desc_es: 'Recomendamos que te quedes en Cerritos, estarás cerca a los dos eventos.',
+            desc_en: 'We recommend staying in Cerritos, you\'ll be close to both events.',
+            sections: [
+                { heading_es: 'Hoteles', heading_en: 'Hotels', items: [
+                    { name: 'Hotel Sonesta', desc_es: 'Hotel en Cerritos', desc_en: 'Hotel in Cerritos', url: 'https://www.sonestapereira.com/' },
+                    { name: 'Sazagua', desc_es: 'Hotel boutique en Cerritos', desc_en: 'Boutique hotel in Cerritos', url: 'https://www.sazagua.com/' },
+                    { name: 'Visus Hotel', desc_es: 'Hotel en Pereira', desc_en: 'Hotel in Pereira', url: 'https://www.hotelvisus.com/' },
+                    { name: 'Hotel Petra Santa', desc_es: 'Hotel en Cerritos', desc_en: 'Hotel in Cerritos', url: 'https://hotelpetrasanta.com/' }
+                ]},
+                { heading_es: 'Airbnb', heading_en: 'Airbnb', items: [
+                    { name: 'Casas en Cerritos', desc_es: 'En Cerritos hay muchas opciones de Airbnb para todos los presupuestos', desc_en: 'In Cerritos there are many Airbnb options for all budgets', url: 'https://www.airbnb.com.co/s/Cerrito--Risaralda/homes?refinement_paths%5B%5D=%2Fhomes&place_id=ChIJd2O3-8t7OI4RfGXXdjnBkVU&date_picker_type=calendar&checkin=2026-08-14&checkout=2026-08-17&search_type=autocomplete_click' }
+                ]}
+            ]
+        },
+        planes: {
+            icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.4 7 11.5 7.35 11.76a1 1 0 0 0 1.3 0C13 21.5 20 15.4 20 10a8 8 0 0 0-8-8z"/></svg>',
+            title_es: 'Planes en la Zona',
+            title_en: 'Things to Do',
+            desc_es: 'Actividades y lugares para conocer en el Eje Cafetero',
+            desc_en: 'Activities and places to explore in the Coffee Region',
+            sections: [
+                { heading_es: 'Pueblos en el Quindío', heading_en: 'Towns in Quindío', items: [
+                    { name: 'Salento, Quindío', desc_es: 'Pueblo colorido cerca al Valle del Cocora', desc_en: 'Colorful town near the Cocora Valley' },
+                    { name: 'Filandia', desc_es: 'Pueblo patrimonio con miradores', desc_en: 'Heritage town with viewpoints' },
+                    { name: 'Quimbaya', desc_es: 'Pueblo cafetero tradicional', desc_en: 'Traditional town in the coffee region' }
+                ]},
+                { heading_es: 'Planes', heading_en: 'Activities', items: [
+                    { name: 'Tour del Café – Finca del Café', desc_es: 'Tour por una finca cafetera tradicional', desc_en: 'Tour through a traditional coffee farm' },
+                    { name: 'Panaca', desc_es: 'Parque temático agropecuario', desc_en: 'Agricultural theme park' },
+                    { name: 'Parque del Café', desc_es: 'Parque temático cafetero con atracciones', desc_en: 'Coffee-themed amusement park' },
+                    { name: 'Termales de San Vicente', desc_es: 'Aguas termales naturales en la montaña', desc_en: 'Natural hot springs in the mountains' }
+                ]},
+                { heading_es: 'Naturaleza', heading_en: 'Nature', items: [
+                    { name: 'Ukumarí', desc_es: 'Bioparque con fauna y flora de Colombia', desc_en: 'Biopark with Colombian fauna and flora' },
+                    { name: 'Caminata La Pastora', desc_es: 'Ruta de senderismo en los alrededores de Pereira', desc_en: 'Hiking trail near Pereira' },
+                    { name: 'Mariposario', desc_es: 'Jardín de mariposas tropicales', desc_en: 'Tropical butterfly garden' }
+                ]}
+            ]
+        },
+        peluqueria: {
+            icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12L12 12"/><path d="M20 4L8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8L20 20"/></svg>',
+            title_es: 'Peluquería & Belleza',
+            title_en: 'Hair & Beauty',
+            desc_es: 'Salones de belleza, barberías y maquillaje en Pereira',
+            desc_en: 'Beauty salons, barbershops and makeup artists in Pereira',
+            sections: [
+                { heading_es: '💇‍♀️ Peluquería (Mujeres)', heading_en: '💇‍♀️ Hair Salons (Women)', items: [
+                    { name: 'Guapa Beauty Club', desc_es: 'Salón de belleza para mujeres', desc_en: 'Beauty salon for women', url: 'https://www.instagram.com/guapabeautyclub/' },
+                    { name: 'Nora de Montes - Hair Color Lab', desc_es: '📞 322 494 2269', desc_en: '📞 322 494 2269' },
+                    { name: 'Pacho - Hotel Movich', desc_es: '📞 +57 312 724 4774', desc_en: '📞 +57 312 724 4774' },
+                    { name: 'Gustavo Trujillo', desc_es: '📞 +57 311 304 2612 · @gustavotrujillogt', desc_en: '📞 +57 311 304 2612 · @gustavotrujillogt', url: 'https://www.instagram.com/gustavotrujillogt/' },
+                    { name: 'Capello Hair Salon', desc_es: '📞 +57 316 285 7118 · @capellopeluqueria', desc_en: '📞 +57 316 285 7118 · @capellopeluqueria', url: 'https://www.instagram.com/capellopeluqueria/' },
+                    { name: 'Yuli Díaz Salón', desc_es: '📞 +57 321 834 6853 · @yuli_diaz_salon', desc_en: '📞 +57 321 834 6853 · @yuli_diaz_salon', url: 'https://www.instagram.com/yuli_diaz_salon/' },
+                    { name: 'Kori Beauty Bar', desc_es: '📞 +57 301 795 6091 · @kori.beautybar', desc_en: '📞 +57 301 795 6091 · @kori.beautybar', url: 'https://www.instagram.com/kori.beautybar/' }
+                ]},
+                { heading_es: '💇‍♂️ Barbería (Hombres)', heading_en: '💇‍♂️ Barbershop (Men)', items: [
+                    { name: 'Fígaro Barbería', desc_es: 'Barbería premium en Pereira', desc_en: 'Premium barbershop in Pereira', url: 'https://figarocolombia.com/pereira/' }
+                ]},
+                { heading_es: '💄 Makeup Artists', heading_en: '💄 Makeup Artists', items: [
+                    { name: 'Ginger Zambrano', desc_es: '@gingerzambranomakeup', desc_en: '@gingerzambranomakeup', url: 'https://www.instagram.com/gingerzambranomakeup/' },
+                    { name: 'Michael Medina', desc_es: '@michaelmedinamakeup', desc_en: '@michaelmedinamakeup', url: 'https://www.instagram.com/michaelmedinamakeup/' },
+                    { name: 'Juliana Londoño', desc_es: '@julilondonomakeup', desc_en: '@julilondonomakeup', url: 'https://www.instagram.com/julilondonomakeup/' },
+                    { name: 'Ma. Teresa Echavarría', desc_es: '@mariate_maquillaje', desc_en: '@mariate_maquillaje', url: 'https://www.instagram.com/mariate_maquillaje/' }
+                ]}
+            ]
+        },
+        transporte: {
+            icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>',
+            title_es: 'Transporte',
+            title_en: 'Transportation',
+            desc_es: '🚫🍺 No manejar tomados. Recomendamos gestionar tu transporte con tiempo, puede no haber mucha oferta en la madrugada 😉',
+            desc_en: '🚫🍺 Don\'t drink and drive. We recommend arranging your transportation ahead of time, there may not be many options in the early morning hours 😉',
+            sections: [
+                { heading_es: 'Apps de transporte', heading_en: 'Ride-hailing apps', items: [
+                    { name: 'InDrive', desc_es: 'App de transporte con precio negociable', desc_en: 'Ride-hailing app with negotiable pricing' },
+                    { name: 'Uber', desc_es: 'Disponible en Pereira', desc_en: 'Available in Pereira' }
+                ]},
+                { heading_es: 'Alquiler de carros', heading_en: 'Car rental', items: [
+                    { name: 'Aeropuerto Matecaña', desc_es: 'Hay agencias de alquiler de carros en el aeropuerto', desc_en: 'Car rental agencies available at the airport' }
+                ]},
+                { heading_es: 'Taxi', heading_en: 'Taxi', items: [
+                    { name: 'Covirochalda', desc_es: 'Servicio fácil y seguro · PBX: (606) 324 4444 · WhatsApp: 310 428 8888 · App Taxia', desc_en: 'Easy and safe service · PBX: (606) 324 4444 · WhatsApp: 310 428 8888 · App Taxia' }
+                ]}
+            ]
+        }
+    };
+
+    const tipsModal = document.getElementById('tipsModal');
+    const tipsModalClose = document.getElementById('tipsModalClose');
+
+    const tipColorClasses = ['tip-theme-alojamiento', 'tip-theme-planes', 'tip-theme-peluqueria', 'tip-theme-transporte'];
+
+    window.openTipsModal = function(type) {
+        const data = tipsContent[type];
+        if (!data) return;
+        const lang = currentLang || 'es';
+
+        // Apply color theme to modal
+        const modal = document.querySelector('.tips-modal');
+        tipColorClasses.forEach(c => modal.classList.remove(c));
+        modal.classList.add('tip-theme-' + type);
+
+        document.getElementById('tipsModalIcon').innerHTML = data.icon;
+        document.getElementById('tipsModalTitle').textContent = lang === 'en' ? data.title_en : data.title_es;
+        document.getElementById('tipsModalDesc').textContent = lang === 'en' ? data.desc_en : data.desc_es;
+
+        let bodyHTML = '';
+        data.sections.forEach(section => {
+            const heading = lang === 'en' ? section.heading_en : section.heading_es;
+            bodyHTML += `<h4 class="tips-modal-section-title">${heading}</h4>`;
+            bodyHTML += '<ul class="tips-modal-list">';
+            section.items.forEach(item => {
+                const desc = lang === 'en' ? item.desc_en : item.desc_es;
+                if (item.url) {
+                    bodyHTML += `<li class="tips-modal-item"><a href="${item.url}" target="_blank" rel="noopener"><div class="tips-modal-item-name">${item.name}</div><div class="tips-modal-item-desc">${desc}</div></a></li>`;
+                } else {
+                    bodyHTML += `<li class="tips-modal-item"><div class="tips-modal-item-name">${item.name}</div><div class="tips-modal-item-desc">${desc}</div></li>`;
+                }
+            });
+            bodyHTML += '</ul>';
+        });
+        document.getElementById('tipsModalBody').innerHTML = bodyHTML;
+
+        tipsModal.scrollTop = 0;
+        tipsModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    };
+
+    function closeTipsModal() {
+        tipsModal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    tipsModalClose.addEventListener('click', closeTipsModal);
+    tipsModal.addEventListener('click', function(e) {
+        if (e.target === tipsModal) closeTipsModal();
+    });
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && tipsModal.classList.contains('active')) {
+            closeTipsModal();
+        }
     });
 
 });
