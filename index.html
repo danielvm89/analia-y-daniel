@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analía & Daniel - 16 de Agosto 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&family=Italiana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-inner">
+            <a href="#inicio" class="nav-logo">
+                <svg class="nav-heliconia" viewBox="0 0 40 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Heliconia estilizada -->
+                    <path d="M20,48 C20,48 18,30 18,25" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>
+                    <path d="M18,25 Q14,22 10,18 Q14,17 18,20" fill="currentColor" class="heliconia-petal-1"/>
+                    <path d="M18,20 Q22,16 26,13 Q23,17 20,20" fill="currentColor" class="heliconia-petal-2"/>
+                    <path d="M20,18 Q15,14 12,9 Q16,10 20,14" fill="currentColor" class="heliconia-petal-3"/>
+                    <path d="M20,14 Q24,9 28,5 Q25,10 22,15" fill="currentColor" class="heliconia-petal-4"/>
+                    <path d="M22,12 Q17,7 15,2 Q19,5 22,9" fill="currentColor" class="heliconia-petal-5"/>
+                </svg>
+                <span>A & D</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio" data-i18n="nav.inicio">Inicio</a></li>
+                <li><a href="#cuenta-regresiva" data-i18n="nav.countdown">Cuenta Regresiva</a></li>
+                <li><a href="#historia" data-i18n="nav.historia">Nuestra Historia</a></li>
+                <li><a href="#prewedding">Pre-Wedding</a></li>
+                <li><a href="#evento" data-i18n="nav.evento">Evento</a></li>
+                <li><a href="#dresscode">Dresscode</a></li>
+                <li><a href="#regalos" data-i18n="nav.regalos">Regalos</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
+                <li><button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero / Inicio -->
+    <section class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle" data-i18n="hero.subtitle">Nos casamos</p>
+            <h1 class="hero-names">Analía <span class="ampersand">&</span> Daniel</h1>
+            <div class="hero-date">
+                <div class="date-line"></div>
+                <p data-i18n="hero.date">16 de Agosto de 2026</p>
+                <div class="date-line"></div>
+            </div>
+            <p class="hero-location">Hacienda San Jorge &bull; Pereira, Colombia</p>
+            <a href="#rsvp" class="hero-btn" data-i18n="hero.btn">Confirmar Asistencia</a>
+        </div>
+        <div class="hero-scroll">
+            <span data-i18n="hero.scroll">Descubre más</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Separador Floral SVG -->
+    <div class="floral-divider">
+        <svg class="divider-heliconia" viewBox="0 0 40 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20,48 C20,48 18,30 18,25" stroke="#1B3A0B" stroke-width="1.5" opacity="0.5"/>
+            <path d="M18,25 Q14,22 10,18 Q14,17 18,20" fill="#D4764E" opacity="0.9"/>
+            <path d="M18,20 Q22,16 26,13 Q23,17 20,20" fill="#E67E22" opacity="0.95"/>
+            <path d="M20,18 Q15,14 12,9 Q16,10 20,14" fill="#D4764E" opacity="0.85"/>
+            <path d="M20,14 Q24,9 28,5 Q25,10 22,15" fill="#E67E22" opacity="0.9"/>
+            <path d="M22,12 Q17,7 15,2 Q19,5 22,9" fill="#D4764E" opacity="0.8"/>
+        </svg>
+    </div>
+
+    <!-- Cuenta Regresiva -->
+    <section class="countdown-section" id="cuenta-regresiva">
+        <div class="container">
+            <h2 class="section-title" data-i18n="countdown.title">Faltan</h2>
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">000</span>
+                    <span class="countdown-label" data-i18n="countdown.days">Días</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">00</span>
+                    <span class="countdown-label" data-i18n="countdown.hours">Horas</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label" data-i18n="countdown.minutes">Minutos</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label" data-i18n="countdown.seconds">Segundos</span>
+                </div>
+            </div>
+            <p class="countdown-message" data-i18n="countdown.message">para comenzar nuestra historia juntos</p>
+        </div>
+        <!-- Hojas decorativas -->
+        <div class="leaf leaf-left"></div>
+        <div class="leaf leaf-right"></div>
+    </section>
+
+    <!-- Nuestra Historia -->
+    <section class="historia-section" id="historia">
+        <div class="container">
+            <h2 class="section-title" data-i18n="historia.title">Nuestra Historia</h2>
+            <p class="section-subtitle" data-i18n="historia.subtitle">En 2018 comenzó nuestro camino y desde entonces, ha sido imposible separarnos. Tumaco, Madrid, Los Balcanes, Medellín, La Guajira, Chicago, Oxford, Londres, Bogotá y Pereira. 8 años juntos, diferentes geografías, pero siempre con la claridad de caminar este camino juntos.</p>
+
+            <div class="historia-timeline">
+                <!-- Línea conductora central -->
+                <div class="timeline-line"></div>
+
+                <!-- Fila 1: 2018 -->
+                <div class="historia-row">
+                    <div class="historia-card">
+                        <img src="img/historia-01-2018-tumaco.jpg" alt="2018" loading="lazy">
+                    </div>
+                    <div class="historia-year"><span>2018</span></div>
+                    <div class="historia-card">
+                        <img src="img/historia-02-2018-tumaco-playa.jpg" alt="2018" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Fila 2: 2018 -->
+                <div class="historia-row">
+                    <div class="historia-card">
+                        <img src="img/historia-03-2018-bogota.jpg" alt="2018" loading="lazy">
+                    </div>
+                    <div class="historia-year"><span>2018</span></div>
+                    <div class="historia-card">
+                        <img src="img/historia-04-2018-madrid.jpg" alt="2018" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Fila 3: 2019 -->
+                <div class="historia-row">
+                    <div class="historia-card">
+                        <img src="img/historia-05-2019-madrid.jpg" alt="2019" loading="lazy">
+                    </div>
+                    <div class="historia-year"><span>2019</span></div>
+                    <div class="historia-card">
+                        <img src="img/historia-06-2019-guajira.jpg" alt="2019" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Fila 4: 2019-2020 -->
+                <div class="historia-row">
+                    <div class="historia-card">
+                        <img src="img/historia-07-2019-guajira2.jpg" alt="2019" loading="lazy">
+                    </div>
+                    <div class="historia-year"><span>2020</span></div>
+                    <div class="historia-card">
+                        <img src="img/historia-08-2020-chicago.jpg" alt="2020" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Fila 5: 2020 -->
+                <div class="historia-row">
+                    <div class="historia-card">
+                        <img src="img/historia-09-2020-uk.jpg" alt="2020" loading="lazy">
+                    </div>
+                    <div class="historia-year"><span>2020</span></div>
+                    <div class="historia-card">
+                        <img src="img/historia-10-2020-uk2.jpg" alt="2020" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Fila 6: 2022-2023 -->
+                <div class="historia-row">
+                    <div class="historia-card">
+                        <img src="img/historia-11-2022-balcanes.jpg" alt="2022" loading="lazy">
+                    </div>
+                    <div class="historia-year"><span>2022</span></div>
+                    <div class="historia-card">
+                        <img src="img/historia-12-2023-balcanes2.jpg" alt="2023" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Fila 7: 2023 -->
+                <div class="historia-row">
+                    <div class="historia-card">
+                        <img src="img/historia-13-2023-bogota.jpg" alt="2023" loading="lazy">
+                    </div>
+                    <div class="historia-year"><span>2023</span></div>
+                    <div class="historia-card">
+                        <img src="img/historia-14-2023-fiesta.jpg" alt="2023" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Fila 8: 2024-2025 -->
+                <div class="historia-row">
+                    <div class="historia-card">
+                        <img src="img/historia-15-2024-pereira.jpg" alt="2024" loading="lazy">
+                    </div>
+                    <div class="historia-year"><span>2024</span></div>
+                    <div class="historia-card">
+                        <img src="img/historia-16-2025-spa.jpg" alt="2025" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Fila 9: La Propuesta 2025 💍 + 2026 -->
+                <div class="historia-row historia-row-propuesta">
+                    <div class="historia-card historia-card-propuesta">
+                        <img src="img/historia-17-2025-propuesta.jpg" alt="La propuesta 2025" loading="lazy">
+                    </div>
+                    <div class="historia-year propuesta-year"><span>2025 💍</span></div>
+                    <div class="historia-card">
+                        <img src="img/historia-18-2026-pereira.jpg" alt="2026" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Separador Floral SVG 2 -->
+    <div class="floral-divider">
+        <svg class="divider-heliconia" viewBox="0 0 40 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20,48 C20,48 18,30 18,25" stroke="#1B3A0B" stroke-width="1.5" opacity="0.5"/>
+            <path d="M18,25 Q14,22 10,18 Q14,17 18,20" fill="#D4764E" opacity="0.9"/>
+            <path d="M18,20 Q22,16 26,13 Q23,17 20,20" fill="#E67E22" opacity="0.95"/>
+            <path d="M20,18 Q15,14 12,9 Q16,10 20,14" fill="#D4764E" opacity="0.85"/>
+            <path d="M20,14 Q24,9 28,5 Q25,10 22,15" fill="#E67E22" opacity="0.9"/>
+            <path d="M22,12 Q17,7 15,2 Q19,5 22,9" fill="#D4764E" opacity="0.8"/>
+        </svg>
+    </div>
+
+    <!-- Pre-Wedding: Pool Party -->
+    <section class="prewedding-section" id="prewedding">
+        <div class="container">
+            <h2 class="section-title">Pre-Wedding</h2>
+            <p class="section-subtitle" data-i18n="prewedding.subtitle">La fiesta comienza un día antes</p>
+
+            <div class="prewedding-card">
+                <div class="prewedding-badge">Pool Party 🏊‍♂️</div>
+                <div class="prewedding-info">
+                    <div class="prewedding-detail">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                        </svg>
+                        <div>
+                            <strong data-i18n="prewedding.date">Sábado 15 de Agosto, 2026</strong>
+                            <span>11:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
+                    <div class="prewedding-detail">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <div>
+                            <strong>Casa Toscana</strong>
+                            <span>Pereira, Colombia</span>
+                        </div>
+                    </div>
+                    <div class="prewedding-detail">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24">
+                            <path d="M8 6v6l4 2"/>
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
+                        <div>
+                            <strong data-i18n="prewedding.transport">Transporte incluido</strong>
+                            <span data-i18n="prewedding.transport_desc">Habrá bus para recogerlos</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="prewedding-description" data-i18n="prewedding.description">
+                    Queremos comenzar la celebración con ustedes un día antes 🎉 Los invitamos a una pool party en Casa Toscana donde podremos empezar a festejar juntos y broncearnos para el Matri el día después. ¡No olviden traer su traje de baño! 👙🩳
+                </p>
+                <a href="https://pin.it/6IHVqtmLP" class="prewedding-pinterest" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="#E60023" width="20" height="20">
+                        <path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/>
+                    </svg>
+                    <span data-i18n="prewedding.pinterest">Inspiración para el Pool Party</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Separador Floral SVG 2 -->
+    <div class="floral-divider">
+        <svg class="divider-heliconia" viewBox="0 0 40 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20,48 C20,48 18,30 18,25" stroke="#1B3A0B" stroke-width="1.5" opacity="0.5"/>
+            <path d="M18,25 Q14,22 10,18 Q14,17 18,20" fill="#D4764E" opacity="0.9"/>
+            <path d="M18,20 Q22,16 26,13 Q23,17 20,20" fill="#E67E22" opacity="0.95"/>
+            <path d="M20,18 Q15,14 12,9 Q16,10 20,14" fill="#D4764E" opacity="0.85"/>
+            <path d="M20,14 Q24,9 28,5 Q25,10 22,15" fill="#E67E22" opacity="0.9"/>
+            <path d="M22,12 Q17,7 15,2 Q19,5 22,9" fill="#D4764E" opacity="0.8"/>
+        </svg>
+    </div>
+
+    <!-- Info del Evento -->
+    <section class="event-section" id="evento">
+        <div class="container">
+            <h2 class="section-title" data-i18n="evento.title">Matrimonio</h2>
+            <p class="section-subtitle" data-i18n="evento.subtitle">Los esperamos en un lugar mágico rodeado de naturaleza</p>
+
+            <div class="event-cards">
+                <div class="event-card">
+                    <div class="event-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <h3>Hacienda San Jorge</h3>
+                    <p>Cerritos, Pereira<br>Colombia</p>
+                </div>
+                <div class="event-card">
+                    <div class="event-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="evento.fecha">16 de Agosto</h3>
+                    <p data-i18n-html="evento.fecha_detail">2026<br>Domingo</p>
+                </div>
+                <div class="event-card">
+                    <div class="event-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12,6 12,12 16,14"/>
+                        </svg>
+                    </div>
+                    <h3>3:00 PM</h3>
+                    <p data-i18n-html="evento.hora_detail">Ceremonia<br>Hora Colombia</p>
+                </div>
+            </div>
+
+            <!-- Mapa -->
+            <div class="map-container" id="mapa">
+                <h3 class="map-title" data-i18n="evento.map_title">Cómo llegar</h3>
+                <div class="map-wrapper">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.5!2d-75.82!3d4.84!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sCerritos+Pereira+Farmatodo!5e0!3m2!1ses!2sco!4v1234567890"
+                        width="100%"
+                        height="400"
+                        style="border:0; border-radius: 12px;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <p class="map-note" data-i18n="evento.map_note">Al lado del Farmatodo de Cerritos, entre el Saint Andrews y el Farmatodo</p>
+                <a href="https://maps.google.com/?q=Farmatodo+Cerritos+Pereira+Colombia" target="_blank" rel="noopener" class="map-link" data-i18n="evento.map_link">
+                    Abrir en Google Maps
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dresscode -->
+    <section class="dresscode-section" id="dresscode">
+        <div class="container">
+            <h2 class="section-title">Dresscode</h2>
+            <p class="section-subtitle" data-i18n="dresscode.subtitle">Queremos que se sientan cómodos y elegantes</p>
+
+            <div class="dresscode-cards">
+                <div class="dresscode-card">
+                    <div class="dresscode-icon">
+                        <svg viewBox="0 0 80 80" fill="none">
+                            <!-- Vestido simplificado -->
+                            <path d="M40,12 C35,12 32,16 32,20 L30,35 L22,65 L58,65 L50,35 L48,20 C48,16 45,12 40,12Z"
+                                  fill="none" stroke="#2D5016" stroke-width="1.5"/>
+                            <circle cx="40" cy="8" r="5" fill="none" stroke="#2D5016" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="dresscode.women">Mujeres</h3>
+                    <p class="dresscode-style">Garden Chic</p>
+                    <p class="dresscode-note" data-i18n-html="dresscode.women_note">Vestido largo, sin tacones puntilla<br>Por favor reservar los colores<br><strong>hueso, blanco y beige</strong><br>para la novia</p>
+                </div>
+                <div class="dresscode-card">
+                    <div class="dresscode-icon">
+                        <svg viewBox="0 0 80 80" fill="none">
+                            <!-- Traje simplificado -->
+                            <path d="M30,20 L28,65 L38,65 L38,40 L42,40 L42,65 L52,65 L50,20Z"
+                                  fill="none" stroke="#2D5016" stroke-width="1.5"/>
+                            <path d="M32,20 L36,12 L40,16 L44,12 L48,20"
+                                  fill="none" stroke="#2D5016" stroke-width="1.5"/>
+                            <circle cx="40" cy="8" r="5" fill="none" stroke="#2D5016" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="dresscode.men">Hombres</h3>
+                    <p class="dresscode-style">Tropical Elegante</p>
+                    <p class="dresscode-note" data-i18n-html="dresscode.men_note"><strong>Camisa de lino</strong><br>con pantalón beige</p>
+                </div>
+            </div>
+
+            <!-- Pinterest Boards de Inspiración -->
+            <div class="pinterest-boards">
+                <h3 class="pinterest-title" data-i18n="dresscode.pinterest_title">Inspiración en Pinterest</h3>
+                <div class="pinterest-links">
+                    <a href="https://pin.it/10gK42YEf" class="pinterest-board-link" id="pinterestMujeres" target="_blank" rel="noopener">
+                        <div class="pinterest-icon">
+                            <svg viewBox="0 0 24 24" fill="#E60023" width="28" height="28">
+                                <path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <strong>Board Mujeres</strong>
+                            <span>Garden Chic</span>
+                        </div>
+                    </a>
+                    <a href="https://pin.it/AfRfrLzOr" class="pinterest-board-link" id="pinterestHombres" target="_blank" rel="noopener">
+                        <div class="pinterest-icon">
+                            <svg viewBox="0 0 24 24" fill="#E60023" width="28" height="28">
+                                <path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <strong>Board Hombres</strong>
+                            <span>Tropical Elegante</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Galería mini con pinturas -->
+    <div class="paintings-strip">
+        <div class="paintings-track">
+            <img src="img/pintura-tropical-1.jpeg" alt="Pintura tropical" loading="lazy">
+            <img src="img/pintura-flores-2.jpeg" alt="Flores del eje cafetero" loading="lazy">
+            <img src="img/pintura-ave-paraiso.jpeg" alt="Ave del paraíso" loading="lazy">
+            <img src="img/pintura-ave-detalle.jpeg" alt="Detalle ave del paraíso" loading="lazy">
+            <img src="img/pintura-ave-roja.jpeg" alt="Ave del paraíso roja" loading="lazy">
+        </div>
+    </div>
+
+    <!-- Mesa de Regalos -->
+    <section class="gifts-section" id="regalos">
+        <div class="container">
+            <h2 class="section-title" data-i18n="gifts.title">Mesa de Regalos</h2>
+            <p class="section-subtitle" data-i18n="gifts.subtitle">Su presencia es nuestro mejor regalo. Sin embargo, si desean tener un detalle con nosotros, aquí les dejamos algunas opciones.</p>
+
+            <div class="gift-options gift-options-3">
+                <div class="gift-card">
+                    <div class="gift-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20,12V22H4V12"/>
+                            <path d="M22,7H2V12H22V7Z"/>
+                            <path d="M12,22V7"/>
+                            <path d="M12,7H7.5a2.5,2.5,0,0,1,0-5C11,2,12,7,12,7Z"/>
+                            <path d="M12,7h4.5a2.5,2.5,0,0,0,0-5C13,2,12,7,12,7Z"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="gifts.honeymoon">Luna de Miel</h3>
+                    <p data-i18n="gifts.honeymoon_desc">Ayúdanos a hacer realidad nuestro viaje soñado juntos a Italia.</p>
+                    <button class="gift-btn" onclick="openGiftModal('honeymoon')" data-i18n="gifts.see_more">Ver más</button>
+                </div>
+                <div class="gift-card">
+                    <div class="gift-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3,9l9-7,9,7v11a2,2,0,0,1-2,2H5a2,2,0,0,1-2-2Z"/>
+                            <polyline points="9,22 9,12 15,12 15,22"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="gifts.home">Nuestro Hogar</h3>
+                    <p data-i18n="gifts.home_desc">Contribuye a terminar de amoblar nuestra casa.</p>
+                    <button class="gift-btn" onclick="openGiftModal('home')" data-i18n="gifts.see_more2">Ver más</button>
+                </div>
+                <div class="gift-card">
+                    <div class="gift-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <path d="M2,8 L12,14 L22,8"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="gifts.envelope">Lluvia de Sobres</h3>
+                    <p data-i18n="gifts.envelope_desc">Si prefieres, puedes traer un sobre el día del evento. Todo aporte será recibido con mucho cariño.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP -->
+    <section class="rsvp-section" id="rsvp">
+        <div class="container">
+            <h2 class="section-title" data-i18n="rsvp.title">Confirmar Asistencia</h2>
+            <p class="section-subtitle" data-i18n-html="rsvp.subtitle">Por favor confirma tu asistencia antes del <strong>31 de mayo de 2026</strong>.<br>Cada persona debe llenar el formulario individualmente.</p>
+
+            <form class="rsvp-form" id="rsvpForm">
+                <div class="form-group">
+                    <label for="nombre" data-i18n="rsvp.name">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo" data-i18n-placeholder="rsvp.name_placeholder">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email" data-i18n="rsvp.email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono" data-i18n="rsvp.phone">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label data-i18n="rsvp.attend_wedding">¿Asistirás al matrimonio? (Domingo 16 de Agosto)</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="asistencia_matrimonio" value="si" required>
+                            <span class="radio-custom"></span>
+                            <span data-i18n="rsvp.yes_wedding">¡Sí, ahí estaré!</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="asistencia_matrimonio" value="no">
+                            <span class="radio-custom"></span>
+                            <span data-i18n="rsvp.no_attend">No podré asistir</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label data-i18n="rsvp.attend_prewedding">¿Asistirás al Pre-Wedding Pool Party? (Sábado 15 de Agosto)</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="asistencia_prewedding" value="si" required>
+                            <span class="radio-custom"></span>
+                            <span data-i18n="rsvp.yes_prewedding">¡Sí, cuenta conmigo!</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="asistencia_prewedding" value="no">
+                            <span class="radio-custom"></span>
+                            <span data-i18n="rsvp.no_attend2">No podré asistir</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="restricciones" data-i18n="rsvp.diet">Restricciones alimenticias</label>
+                    <select id="restricciones" name="restricciones">
+                        <option value="ninguna" data-i18n="rsvp.diet_none">Ninguna</option>
+                        <option value="no-carnes-rojas" data-i18n="rsvp.diet_no_red">No como carnes rojas</option>
+                        <option value="vegetariano" data-i18n="rsvp.diet_veg">Vegetariano</option>
+                        <option value="vegano" data-i18n="rsvp.diet_vegan">Vegano</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje" data-i18n="rsvp.message">Mensaje para los novios (opcional)</label>
+                    <textarea id="mensaje" name="mensaje" rows="3" placeholder="Escríbenos algo bonito..." data-i18n-placeholder="rsvp.message_placeholder"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span data-i18n="rsvp.confirm">Confirmar</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                        <path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2Z"/>
+                    </svg>
+                </button>
+            </form>
+
+            <!-- Mensaje de éxito -->
+            <div class="rsvp-success" id="rsvpSuccess" style="display:none;">
+                <div class="success-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                    </svg>
+                </div>
+                <h3 data-i18n="rsvp.thanks">¡Gracias por confirmar!</h3>
+                <p data-i18n="rsvp.thanks_msg">Hemos recibido tu respuesta. Nos vemos el 16 de agosto.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-art">
+            <img src="img/save-the-date.jpeg" alt="Analía y Daniel" class="footer-painting" loading="lazy">
+        </div>
+        <div class="footer-content">
+            <p class="footer-names">Analía & Daniel</p>
+            <p class="footer-date">16.08.2026 &bull; Pereira, Colombia</p>
+            <p class="footer-hashtag">#AnalíaYDaniel</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Regalos -->
+    <div class="gift-modal-overlay" id="giftModal">
+        <div class="gift-modal">
+            <button class="modal-close" id="modalClose" aria-label="Cerrar">&times;</button>
+
+            <!-- Galería de imágenes de referencia -->
+            <div class="gift-gallery" id="giftGallery">
+                <div class="gift-gallery-track" id="giftGalleryTrack"></div>
+                <button class="gift-gallery-btn gift-gallery-prev" id="galleryPrev" aria-label="Anterior">&#8249;</button>
+                <button class="gift-gallery-btn gift-gallery-next" id="galleryNext" aria-label="Siguiente">&#8250;</button>
+                <div class="gift-gallery-dots" id="galleryDots"></div>
+            </div>
+
+            <div class="modal-header">
+                <div class="modal-icon" id="modalIcon"></div>
+                <h3 class="modal-title" id="modalTitle"></h3>
+                <p class="modal-desc" id="modalDesc"></p>
+            </div>
+
+            <div class="modal-body">
+                <!-- Mini formulario de regalo -->
+                <div class="gift-form-divider">
+                    <span class="gift-form-divider-line"></span>
+                    <span class="gift-form-divider-text" data-i18n="gifts.form_contribute">Contribuye aquí</span>
+                    <span class="gift-form-divider-line"></span>
+                </div>
+
+                <form class="gift-form" id="giftForm">
+                    <div class="gift-form-row">
+                        <div class="gift-form-group">
+                            <label data-i18n="gifts.form_name">Tu nombre</label>
+                            <input type="text" name="gift_nombre" required placeholder="Tu nombre" data-i18n-placeholder="gifts.form_name_ph">
+                        </div>
+                        <div class="gift-form-group gift-form-amount">
+                            <label data-i18n="gifts.form_amount">Monto (COP)</label>
+                            <input type="text" name="gift_monto" placeholder="$500.000" data-i18n-placeholder="gifts.form_amount_ph">
+                        </div>
+                    </div>
+                    <div class="gift-form-group">
+                        <label data-i18n="gifts.form_message">Mensaje (opcional)</label>
+                        <textarea name="gift_mensaje" rows="2" placeholder="Un mensaje para los novios..." data-i18n-placeholder="gifts.form_message_ph"></textarea>
+                    </div>
+                    <input type="hidden" name="gift_tipo" id="giftTipo" value="">
+                    <button type="submit" class="gift-form-submit">
+                        <span data-i18n="gifts.form_send">Enviar</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </button>
+                </form>
+
+                <div class="gift-form-success" id="giftFormSuccess" style="display:none;">
+                    <span>✓</span>
+                    <p data-i18n="gifts.form_thanks">¡Gracias por tu generosidad! Los novios recibirán tu mensaje.</p>
+                </div>
+
+                <!-- Datos bancarios colapsables -->
+                <div class="gift-form-divider">
+                    <span class="gift-form-divider-line"></span>
+                    <span class="gift-form-divider-text" data-i18n="gifts.form_or">o transfiere directamente</span>
+                    <span class="gift-form-divider-line"></span>
+                </div>
+
+                <div class="bank-accordion">
+                    <button class="bank-accordion-toggle" id="bankToggle" type="button">
+                        <span data-i18n="gifts.show_bank">Ver datos bancarios</span>
+                        <svg class="bank-accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="bank-accordion-body" id="bankBody">
+                        <div class="bank-option">
+                            <div class="bank-option-header">
+                                <span class="bank-option-icon">🏦</span>
+                                <div>
+                                    <strong data-i18n="gifts.bank_transfer">Transferencia Bancaria</strong>
+                                    <span class="bank-name">Bancolombia</span>
+                                </div>
+                            </div>
+                            <div class="bank-details">
+                                <div class="bank-detail-row">
+                                    <span class="bank-label" data-i18n="gifts.account_type">Tipo de cuenta:</span>
+                                    <span class="bank-value" data-i18n="gifts.savings">Ahorros</span>
+                                </div>
+                                <div class="bank-detail-row">
+                                    <span class="bank-label" data-i18n="gifts.account_number">No. de cuenta:</span>
+                                    <span class="bank-value bank-copyable" data-copy="XXXXXXXXXX">XXXXXXXXXX</span>
+                                </div>
+                                <div class="bank-detail-row">
+                                    <span class="bank-label" data-i18n="gifts.account_holder">Titular:</span>
+                                    <span class="bank-value">Daniel / Analía</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bank-option">
+                            <div class="bank-option-header">
+                                <span class="bank-option-icon">📱</span>
+                                <div>
+                                    <strong>Nequi</strong>
+                                    <span class="bank-name" data-i18n="gifts.nequi_desc">Envío rápido desde tu celular</span>
+                                </div>
+                            </div>
+                            <div class="bank-details">
+                                <div class="bank-detail-row">
+                                    <span class="bank-label" data-i18n="gifts.phone_number">Número:</span>
+                                    <span class="bank-value bank-copyable" data-copy="3XXXXXXXXX">3XXXXXXXXX</span>
+                                </div>
+                                <div class="bank-detail-row">
+                                    <span class="bank-label" data-i18n="gifts.account_holder">Titular:</span>
+                                    <span class="bank-value">Daniel / Analía</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bank-option">
+                            <div class="bank-option-header">
+                                <span class="bank-option-icon">💜</span>
+                                <div>
+                                    <strong>Daviplata</strong>
+                                    <span class="bank-name" data-i18n="gifts.daviplata_desc">Transferencia fácil</span>
+                                </div>
+                            </div>
+                            <div class="bank-details">
+                                <div class="bank-detail-row">
+                                    <span class="bank-label" data-i18n="gifts.phone_number">Número:</span>
+                                    <span class="bank-value bank-copyable" data-copy="3XXXXXXXXX">3XXXXXXXXX</span>
+                                </div>
+                                <div class="bank-detail-row">
+                                    <span class="bank-label" data-i18n="gifts.account_holder">Titular:</span>
+                                    <span class="bank-value">Daniel / Analía</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="modal-note" data-i18n="gifts.modal_note">Al realizar tu aporte, por favor incluye tu nombre en la descripción para que podamos agradecerte personalmente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
