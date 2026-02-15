@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512" height="512">
+  <rect width="64" height="64" rx="12" fill="#FDF8F0"/>
+
+  <g transform="translate(19, 0) scale(0.45)">
+    <path d="M20,48 L18,25 L18,20 L20,18 L20,14 L22,12 L22,3" stroke="#2F5A1A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.75"/>
+    <path d="M18,25 Q14,22 10,18 Q14,17 18,20" fill="#C0392B" opacity="0.9"/>
+    <path d="M18,20 Q22,16 26,13 Q23,17 20,20" fill="#D4764E" opacity="0.95"/>
+    <path d="M20,18 Q15,14 12,9 Q16,10 20,14" fill="#C0392B" opacity="0.85"/>
+    <path d="M20,14 Q24,9 28,5 Q25,10 22,15" fill="#D4764E" opacity="0.9"/>
+    <path d="M22,12 Q17,7 15,2 Q19,5 22,9" fill="#C0392B" opacity="0.8"/>
+  </g>
+
+  <text x="32" y="53" font-family="'Cormorant Infant', Georgia, serif" font-size="20" font-weight="300" fill="#1B3A0B" text-anchor="middle" letter-spacing="2">AD</text>
+</svg>

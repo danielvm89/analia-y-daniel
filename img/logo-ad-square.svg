@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="2000" height="2000">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400&amp;family=Cormorant+Garamond:ital,wght@1,300&amp;display=swap');
+    </style>
+  </defs>
+
+  <g transform="translate(82, 14) scale(1.5)">
+    <path d="M20,48 L18,25 L18,20 L20,18 L20,14 L22,12 L22,3" stroke="#2F5A1A" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.75"/>
+    <path d="M18,25 Q14,22 10,18 Q14,17 18,20" fill="#C0392B" opacity="0.9"/>
+    <path d="M18,20 Q22,16 26,13 Q23,17 20,20" fill="#D4764E" opacity="0.95"/>
+    <path d="M20,18 Q15,14 12,9 Q16,10 20,14" fill="#C0392B" opacity="0.85"/>
+    <path d="M20,14 Q24,9 28,5 Q25,10 22,15" fill="#D4764E" opacity="0.9"/>
+    <path d="M22,12 Q17,7 15,2 Q19,5 22,9" fill="#C0392B" opacity="0.8"/>
+  </g>
+
+  <text x="52" y="158" font-family="'Cormorant Infant', Georgia, serif" font-size="62" font-weight="400" fill="#1B3A0B" text-anchor="middle" letter-spacing="2">A</text>
+  <text x="100" y="155" font-family="'Cormorant Garamond', Georgia, serif" font-size="40" font-weight="300" font-style="italic" fill="#C0392B" text-anchor="middle">&amp;</text>
+  <text x="148" y="158" font-family="'Cormorant Infant', Georgia, serif" font-size="62" font-weight="400" fill="#1B3A0B" text-anchor="middle" letter-spacing="2">D</text>
+  <line x1="58" y1="172" x2="142" y2="172" stroke="#C0392B" stroke-width="0.6" opacity="0.3"/>
+</svg>
