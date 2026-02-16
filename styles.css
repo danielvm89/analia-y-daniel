@@ -991,6 +991,14 @@ a {
     letter-spacing: 0.5px;
 }
 
+.evento-festivo {
+    font-size: 0.78rem;
+    color: var(--orange-warm);
+    font-weight: 500;
+    margin-top: 6px;
+    letter-spacing: 0.5px;
+}
+
 /* Map */
 .map-container {
     margin-top: 40px;
