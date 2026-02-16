@@ -787,7 +787,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         },
         transporte: {
-            icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>',
+            icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14v-5l-2-6H7L5 12v5z"/><circle cx="7.5" cy="19.5" r="1.5"/><circle cx="16.5" cy="19.5" r="1.5"/><path d="M5 12h14"/><path d="M10 5h4v2h-4z"/></svg>',
             title_es: 'Transporte',
             title_en: 'Transportation',
             desc_es: '🚫🍺 No manejar tomados. Recomendamos gestionar tu transporte con tiempo, puede no haber mucha oferta en la madrugada 😉',
