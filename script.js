@@ -94,6 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const formData = new FormData(form);
         const data = Object.fromEntries(formData.entries());
+        data.restricciones = formData.getAll('restricciones').join(', ');
         data.timestamp = new Date().toISOString();
 
         if (GOOGLE_SHEETS_URL) {
@@ -294,8 +295,12 @@ document.addEventListener('DOMContentLoaded', () => {
             'rsvp.diet': 'Restricciones alimenticias',
             'rsvp.diet_none': 'Ninguna',
             'rsvp.diet_no_red': 'No como carnes rojas',
+            'rsvp.diet_no_chicken': 'No como pollo',
+            'rsvp.diet_no_fish': 'No como pescado',
             'rsvp.diet_veg': 'Vegetariano',
             'rsvp.diet_vegan': 'Vegano',
+            'rsvp.allergies': 'Alergias',
+            'rsvp.allergies_placeholder': 'ej: Mariscos',
             'rsvp.message': 'Mensaje para los novios (opcional)',
             'rsvp.message_placeholder': 'Escríbenos algo bonito...',
             'rsvp.confirm': 'Confirmar',
@@ -403,8 +408,12 @@ document.addEventListener('DOMContentLoaded', () => {
             'rsvp.diet': 'Dietary restrictions',
             'rsvp.diet_none': 'None',
             'rsvp.diet_no_red': 'No red meat',
+            'rsvp.diet_no_chicken': 'No chicken',
+            'rsvp.diet_no_fish': 'No fish',
             'rsvp.diet_veg': 'Vegetarian',
             'rsvp.diet_vegan': 'Vegan',
+            'rsvp.allergies': 'Allergies',
+            'rsvp.allergies_placeholder': 'e.g.: Shellfish',
             'rsvp.message': 'Message for the couple (optional)',
             'rsvp.message_placeholder': 'Write us something nice...',
             'rsvp.confirm': 'Confirm',

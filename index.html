@@ -664,13 +664,44 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="restricciones" data-i18n="rsvp.diet">Restricciones alimenticias</label>
-                    <select id="restricciones" name="restricciones">
-                        <option value="ninguna" data-i18n="rsvp.diet_none">Ninguna</option>
-                        <option value="no-carnes-rojas" data-i18n="rsvp.diet_no_red">No como carnes rojas</option>
-                        <option value="vegetariano" data-i18n="rsvp.diet_veg">Vegetariano</option>
-                        <option value="vegano" data-i18n="rsvp.diet_vegan">Vegano</option>
-                    </select>
+                    <label data-i18n="rsvp.diet">Restricciones alimenticias</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="restricciones" value="ninguna">
+                            <span class="checkbox-custom"></span>
+                            <span data-i18n="rsvp.diet_none">Ninguna</span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="restricciones" value="no-carnes-rojas">
+                            <span class="checkbox-custom"></span>
+                            <span data-i18n="rsvp.diet_no_red">No como carnes rojas</span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="restricciones" value="no-pollo">
+                            <span class="checkbox-custom"></span>
+                            <span data-i18n="rsvp.diet_no_chicken">No como pollo</span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="restricciones" value="no-pescado">
+                            <span class="checkbox-custom"></span>
+                            <span data-i18n="rsvp.diet_no_fish">No como pescado</span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="restricciones" value="vegetariano">
+                            <span class="checkbox-custom"></span>
+                            <span data-i18n="rsvp.diet_veg">Vegetariano</span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="restricciones" value="vegano">
+                            <span class="checkbox-custom"></span>
+                            <span data-i18n="rsvp.diet_vegan">Vegano</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="alergias" data-i18n="rsvp.allergies">Alergias</label>
+                    <input type="text" id="alergias" name="alergias" placeholder="ej: Mariscos" data-i18n-placeholder="rsvp.allergies_placeholder">
                 </div>
 
                 <div class="form-group">
