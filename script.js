@@ -128,8 +128,50 @@ document.addEventListener('DOMContentLoaded', () => {
     function showRSVPSuccess() {
         form.style.display = 'none';
         successDiv.style.display = 'block';
-        successDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
+
+    // ---------- RSVP Modal ----------
+    const rsvpModal = document.getElementById('rsvpModal');
+    const rsvpModalClose = document.getElementById('rsvpModalClose');
+
+    window.openRsvpModal = function() {
+        // Apply i18n translations inside modal
+        rsvpModal.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (translations[currentLang][key]) el.textContent = translations[currentLang][key];
+        });
+        rsvpModal.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+            const key = el.getAttribute('data-i18n-placeholder');
+            if (translations[currentLang][key]) el.placeholder = translations[currentLang][key];
+        });
+
+        // Reset form if previously submitted
+        form.style.display = '';
+        successDiv.style.display = 'none';
+
+        // Scroll modal to top
+        rsvpModal.querySelector('.gift-modal').scrollTop = 0;
+
+        rsvpModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    };
+
+    function closeRsvpModal() {
+        rsvpModal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    rsvpModalClose.addEventListener('click', closeRsvpModal);
+
+    rsvpModal.addEventListener('click', (e) => {
+        if (e.target === rsvpModal) closeRsvpModal();
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && rsvpModal.classList.contains('active')) {
+            closeRsvpModal();
+        }
+    });
 
     // ---------- Historia Timeline Fade In ----------
     const timelineRows = document.querySelectorAll('.historia-row');
@@ -304,6 +346,10 @@ document.addEventListener('DOMContentLoaded', () => {
             'rsvp.message': 'Mensaje para los novios (opcional)',
             'rsvp.message_placeholder': 'Escríbenos algo bonito...',
             'rsvp.confirm': 'Confirmar',
+            'rsvp.card_title': 'Formulario de Confirmación',
+            'rsvp.card_desc': 'Confirma tu asistencia al matrimonio y al pre-wedding pool party',
+            'rsvp.card_btn': 'Confirmar asistencia',
+            'rsvp.modal_desc': 'Cada persona debe llenar el formulario individualmente',
             'rsvp.thanks': '¡Gracias por confirmar!',
             'rsvp.thanks_msg': 'Hemos recibido tu respuesta. Nos vemos el 16 de agosto.'
         },
@@ -417,6 +463,10 @@ document.addEventListener('DOMContentLoaded', () => {
             'rsvp.message': 'Message for the couple (optional)',
             'rsvp.message_placeholder': 'Write us something nice...',
             'rsvp.confirm': 'Confirm',
+            'rsvp.card_title': 'Confirmation Form',
+            'rsvp.card_desc': 'Confirm your attendance to the wedding and pre-wedding pool party',
+            'rsvp.card_btn': 'Confirm attendance',
+            'rsvp.modal_desc': 'Each person must fill out the form individually',
             'rsvp.thanks': 'Thank you for confirming!',
             'rsvp.thanks_msg': 'We\'ve received your response. See you on August 16.'
         }

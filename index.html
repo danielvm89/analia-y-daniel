@@ -598,135 +598,16 @@
             <h2 class="section-title" data-i18n="rsvp.title">Confirmar Asistencia</h2>
             <p class="section-subtitle" data-i18n-html="rsvp.subtitle">Por favor confirma tu asistencia antes del <strong>31 de mayo de 2026</strong>.<br>Cada persona debe llenar el formulario individualmente.</p>
 
-            <form class="rsvp-form" id="rsvpForm">
-                <div class="form-group">
-                    <label for="nombre" data-i18n="rsvp.name">Nombre completo</label>
-                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo" data-i18n-placeholder="rsvp.name_placeholder">
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="email" data-i18n="rsvp.email">Correo electrónico</label>
-                        <input type="email" id="email" name="email" required placeholder="tu@email.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="telefono" data-i18n="rsvp.phone">Teléfono</label>
-                        <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label data-i18n="rsvp.attend_wedding">¿Asistirás al matrimonio? (Domingo 16 de Agosto)</label>
-                    <div class="radio-group">
-                        <label class="radio-option">
-                            <input type="radio" name="asistencia_matrimonio" value="si" required>
-                            <span class="radio-custom"></span>
-                            <span data-i18n="rsvp.yes_wedding">¡Sí, ahí estaré!</span>
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="asistencia_matrimonio" value="no">
-                            <span class="radio-custom"></span>
-                            <span data-i18n="rsvp.no_attend">No podré asistir</span>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label data-i18n="rsvp.attend_prewedding">¿Asistirás al Pre-Wedding Pool Party? (Sábado 15 de Agosto)</label>
-                    <div class="radio-group">
-                        <label class="radio-option">
-                            <input type="radio" name="asistencia_prewedding" value="si" required>
-                            <span class="radio-custom"></span>
-                            <span data-i18n="rsvp.yes_prewedding">¡Sí, cuenta conmigo!</span>
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="asistencia_prewedding" value="no">
-                            <span class="radio-custom"></span>
-                            <span data-i18n="rsvp.no_attend2">No podré asistir</span>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label data-i18n="rsvp.need_van">¿Necesitas transporte (van) para llegar al Pre-Wedding?</label>
-                    <div class="radio-group">
-                        <label class="radio-option">
-                            <input type="radio" name="necesita_van" value="si">
-                            <span class="radio-custom"></span>
-                            <span data-i18n="rsvp.yes_van">Sí, necesito transporte</span>
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="necesita_van" value="no">
-                            <span class="radio-custom"></span>
-                            <span data-i18n="rsvp.no_van">No, llego por mi cuenta</span>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label data-i18n="rsvp.diet">Restricciones alimenticias</label>
-                    <div class="checkbox-group">
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="restricciones" value="ninguna">
-                            <span class="checkbox-custom"></span>
-                            <span data-i18n="rsvp.diet_none">Ninguna</span>
-                        </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="restricciones" value="no-carnes-rojas">
-                            <span class="checkbox-custom"></span>
-                            <span data-i18n="rsvp.diet_no_red">No como carnes rojas</span>
-                        </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="restricciones" value="no-pollo">
-                            <span class="checkbox-custom"></span>
-                            <span data-i18n="rsvp.diet_no_chicken">No como pollo</span>
-                        </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="restricciones" value="no-pescado">
-                            <span class="checkbox-custom"></span>
-                            <span data-i18n="rsvp.diet_no_fish">No como pescado</span>
-                        </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="restricciones" value="vegetariano">
-                            <span class="checkbox-custom"></span>
-                            <span data-i18n="rsvp.diet_veg">Vegetariano</span>
-                        </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="restricciones" value="vegano">
-                            <span class="checkbox-custom"></span>
-                            <span data-i18n="rsvp.diet_vegan">Vegano</span>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="alergias" data-i18n="rsvp.allergies">Alergias</label>
-                    <input type="text" id="alergias" name="alergias" placeholder="ej: Mariscos" data-i18n-placeholder="rsvp.allergies_placeholder">
-                </div>
-
-                <div class="form-group">
-                    <label for="mensaje" data-i18n="rsvp.message">Mensaje para los novios (opcional)</label>
-                    <textarea id="mensaje" name="mensaje" rows="3" placeholder="Escríbenos algo bonito..." data-i18n-placeholder="rsvp.message_placeholder"></textarea>
-                </div>
-
-                <button type="submit" class="submit-btn">
-                    <span data-i18n="rsvp.confirm">Confirmar</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
-                        <path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2Z"/>
-                    </svg>
-                </button>
-            </form>
-
-            <!-- Mensaje de éxito -->
-            <div class="rsvp-success" id="rsvpSuccess" style="display:none;">
-                <div class="success-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                        <polyline points="22 4 12 14.01 9 11.01"/>
+            <div class="rsvp-card">
+                <div class="gift-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M9 11l3 3L22 4"/>
+                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
                     </svg>
                 </div>
-                <h3 data-i18n="rsvp.thanks">¡Gracias por confirmar!</h3>
-                <p data-i18n="rsvp.thanks_msg">Hemos recibido tu respuesta. Nos vemos el 16 de agosto.</p>
+                <h3 data-i18n="rsvp.card_title">Formulario de Confirmación</h3>
+                <p data-i18n="rsvp.card_desc">Confirma tu asistencia al matrimonio y al pre-wedding pool party</p>
+                <button class="gift-btn" onclick="openRsvpModal()" data-i18n="rsvp.card_btn">Confirmar asistencia</button>
             </div>
         </div>
     </section>
@@ -742,6 +623,157 @@
             <p class="footer-hashtag">#AnalíaYDaniel</p>
         </div>
     </footer>
+
+    <!-- Modal de RSVP -->
+    <div class="rsvp-modal-overlay" id="rsvpModal">
+        <div class="gift-modal">
+            <button class="modal-close" id="rsvpModalClose" aria-label="Cerrar">&times;</button>
+
+            <div class="modal-header">
+                <div class="modal-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M9 11l3 3L22 4"/>
+                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                    </svg>
+                </div>
+                <h3 class="modal-title" data-i18n="rsvp.title">Confirmar Asistencia</h3>
+                <p class="modal-desc" data-i18n="rsvp.modal_desc">Cada persona debe llenar el formulario individualmente</p>
+            </div>
+
+            <div class="modal-body">
+                <form class="rsvp-form" id="rsvpForm">
+                    <div class="form-group">
+                        <label for="nombre" data-i18n="rsvp.name">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo" data-i18n-placeholder="rsvp.name_placeholder">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email" data-i18n="rsvp.email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono" data-i18n="rsvp.phone">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-i18n="rsvp.attend_wedding">¿Asistirás al matrimonio? (Domingo 16 de Agosto)</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="asistencia_matrimonio" value="si" required>
+                                <span class="radio-custom"></span>
+                                <span data-i18n="rsvp.yes_wedding">¡Sí, ahí estaré!</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="asistencia_matrimonio" value="no">
+                                <span class="radio-custom"></span>
+                                <span data-i18n="rsvp.no_attend">No podré asistir</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-i18n="rsvp.attend_prewedding">¿Asistirás al Pre-Wedding Pool Party? (Sábado 15 de Agosto)</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="asistencia_prewedding" value="si" required>
+                                <span class="radio-custom"></span>
+                                <span data-i18n="rsvp.yes_prewedding">¡Sí, cuenta conmigo!</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="asistencia_prewedding" value="no">
+                                <span class="radio-custom"></span>
+                                <span data-i18n="rsvp.no_attend2">No podré asistir</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-i18n="rsvp.need_van">¿Necesitas transporte (van) para llegar al Pre-Wedding?</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="necesita_van" value="si">
+                                <span class="radio-custom"></span>
+                                <span data-i18n="rsvp.yes_van">Sí, necesito transporte</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="necesita_van" value="no">
+                                <span class="radio-custom"></span>
+                                <span data-i18n="rsvp.no_van">No, llego por mi cuenta</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-i18n="rsvp.diet">Restricciones alimenticias</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="restricciones" value="ninguna">
+                                <span class="checkbox-custom"></span>
+                                <span data-i18n="rsvp.diet_none">Ninguna</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="restricciones" value="no-carnes-rojas">
+                                <span class="checkbox-custom"></span>
+                                <span data-i18n="rsvp.diet_no_red">No como carnes rojas</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="restricciones" value="no-pollo">
+                                <span class="checkbox-custom"></span>
+                                <span data-i18n="rsvp.diet_no_chicken">No como pollo</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="restricciones" value="no-pescado">
+                                <span class="checkbox-custom"></span>
+                                <span data-i18n="rsvp.diet_no_fish">No como pescado</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="restricciones" value="vegetariano">
+                                <span class="checkbox-custom"></span>
+                                <span data-i18n="rsvp.diet_veg">Vegetariano</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="restricciones" value="vegano">
+                                <span class="checkbox-custom"></span>
+                                <span data-i18n="rsvp.diet_vegan">Vegano</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="alergias" data-i18n="rsvp.allergies">Alergias</label>
+                        <input type="text" id="alergias" name="alergias" placeholder="ej: Mariscos" data-i18n-placeholder="rsvp.allergies_placeholder">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje" data-i18n="rsvp.message">Mensaje para los novios (opcional)</label>
+                        <textarea id="mensaje" name="mensaje" rows="3" placeholder="Escríbenos algo bonito..." data-i18n-placeholder="rsvp.message_placeholder"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span data-i18n="rsvp.confirm">Confirmar</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                            <path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2Z"/>
+                        </svg>
+                    </button>
+                </form>
+
+                <!-- Mensaje de éxito -->
+                <div class="rsvp-success" id="rsvpSuccess" style="display:none;">
+                    <div class="success-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="rsvp.thanks">¡Gracias por confirmar!</h3>
+                    <p data-i18n="rsvp.thanks_msg">Hemos recibido tu respuesta. Nos vemos el 16 de agosto.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Modal de Regalos -->
     <div class="gift-modal-overlay" id="giftModal">

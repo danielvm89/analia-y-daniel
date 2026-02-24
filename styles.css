@@ -1645,7 +1645,8 @@ a {
 }
 
 /* ---------- Gift Modal ---------- */
-.gift-modal-overlay {
+.gift-modal-overlay,
+.rsvp-modal-overlay {
     position: fixed;
     inset: 0;
     background: rgba(15, 38, 7, 0.6);
@@ -1660,7 +1661,8 @@ a {
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.gift-modal-overlay.active {
+.gift-modal-overlay.active,
+.rsvp-modal-overlay.active {
     opacity: 1;
     visibility: visible;
 }
@@ -1678,7 +1680,8 @@ a {
     box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3);
 }
 
-.gift-modal-overlay.active .gift-modal {
+.gift-modal-overlay.active .gift-modal,
+.rsvp-modal-overlay.active .gift-modal {
     transform: translateY(0) scale(1);
 }
 
@@ -2190,6 +2193,47 @@ a {
         linear-gradient(135deg, rgba(45, 80, 22, 0.03) 0%, rgba(212, 118, 78, 0.03) 100%),
         var(--white);
     text-align: center;
+}
+
+.rsvp-card {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 50px 30px;
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(45, 80, 22, 0.06);
+    transition: transform 0.3s;
+}
+
+.rsvp-card:hover {
+    transform: translateY(-4px);
+}
+
+.rsvp-card .gift-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 20px;
+    color: var(--red-heliconia);
+}
+
+.rsvp-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--green-deep);
+    margin-bottom: 10px;
+}
+
+.rsvp-card p {
+    font-size: 0.9rem;
+    color: var(--text-medium);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.rsvp-modal-overlay .rsvp-form {
+    max-width: 100%;
+    text-align: left;
 }
 
 .rsvp-form {
